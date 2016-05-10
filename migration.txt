@@ -1,0 +1,16 @@
+11/11/2014 12:50 PM -Locations query has 2 records
+11/11/2014 12:50 PM - Client info was not found for 0 locations. 2 applications should have been migrated.
+11/11/2014 12:50 PM -Locations query has 2 records
+11/11/2014 12:50 PM - Client info was not found for 0 locations. 2 applications should have been migrated.
+11/11/2014 12:51 PM -Locations query has 4 records
+11/11/2014 12:51 PM - Client info was not found for 0 locations. 4 applications should have been migrated.
+11/11/2014 12:52 PM -Locations query has 4 records
+11/11/2014 12:52 PM - Client info was not found for 0 locations. 4 applications should have been migrated.
+11/11/2014 12:52 PM -Locations query has 3 records
+11/11/2014 12:52 PM - Client info was not found for 0 locations. 3 applications should have been migrated.
+11/11/2014 12:53 PM -Locations query has 3 records
+11/11/2014 12:53 PM - Client info was not found for 0 locations. 3 applications should have been migrated.
+04/23/2015 02:07 PM -Locations query has 1 records
+04/23/2015 02:07 PM - Client info was not found for 0 locations. 1 applications should have been migrated.
+04/23/2015 02:08 PM -Locations query has 1 records
+04/23/2015 02:08 PM - Client info was not found for 0 locations. 1 applications should have been migrated.

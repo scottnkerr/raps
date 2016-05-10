@@ -1,0 +1,751 @@
+Date,Order ID,SKU,Transaction type,Payment Type,Payment Detail,Amount,Quantity,Product Title
+8-Sep-14,002-0590980-5673869,BP-RS-BK,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,002-0590980-5673869,BP-RS-BK,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,002-0590980-5673869,BP-RS-BK,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Amazon fees,FBA weight based fee,($1.34),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Amazon fees,Shipping chargeback,($7.99),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,002-1248922-9397057,BP-GA-CC,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Concentric Circles
+5-Sep-14,002-1479003-0740245,BP-VT-WT,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Wicked White
+5-Sep-14,002-1479003-0740245,BP-VT-WT,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Wicked White
+5-Sep-14,002-1479003-0740245,BP-VT-WT,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Wicked White
+5-Sep-14,002-1479003-0740245,BP-VT-WT,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Wicked White
+5-Sep-14,002-1479003-0740245,BP-VT-WT,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Wicked White
+9-Sep-14,002-2383667-8763418,BP-D-PSART,Order Payment,Amazon fees,Commission,($15.00),,DaisyGear Backpack Diaper Bag - Pistachio Art
+9-Sep-14,002-2383667-8763418,BP-D-PSART,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DaisyGear Backpack Diaper Bag - Pistachio Art
+9-Sep-14,002-2383667-8763418,BP-D-PSART,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DaisyGear Backpack Diaper Bag - Pistachio Art
+9-Sep-14,002-2383667-8763418,BP-D-PSART,Order Payment,Product charges,,$99.99 ,1,DaisyGear Backpack Diaper Bag - Pistachio Art
+4-Sep-14,002-4390594-1060212,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4390594-1060212,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4390594-1060212,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4390594-1060212,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,002-4461927-2370653,BP-RS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+6-Sep-14,002-4461927-2370653,BP-RS-OR,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+6-Sep-14,002-4461927-2370653,BP-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+6-Sep-14,002-4461927-2370653,BP-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+6-Sep-14,002-4461927-2370653,BP-RS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,002-4976115-2678634,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,002-5038826-8614649,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,002-5038826-8614649,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,002-5038826-8614649,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,002-5038826-8614649,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Amazon fees,FBA weight based fee,($2.51),,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Promo rebates,,$0.00 ,1,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Messenger Diaper Bag - Wicked White
+5-Sep-14,002-5722235-6394600,MB-VT-WT,Order Payment,Other,Shipping,$7.99 ,,DadGear Messenger Diaper Bag - Wicked White
+3-Sep-14,002-7316268-5537854,BP-CS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Center Stripe
+3-Sep-14,002-7316268-5537854,BP-CS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Green Center Stripe
+3-Sep-14,002-7316268-5537854,BP-CS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Green Center Stripe
+3-Sep-14,002-7316268-5537854,BP-CS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Center Stripe
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Promo rebates,Shipping,($3.62),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,002-7739057-4810645,BP-PR-GY,Order Payment,Other,Shipping,$3.62 ,,DadGear Backpack Diaper Bag - Grey Professional
+7-Sep-14,002-7862232-2912238,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,002-7862232-2912238,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,002-7862232-2912238,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,002-7862232-2912238,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,002-7862232-2912238,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,002-9496282-5762642,BP-VT-WT,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Wicked White
+9-Sep-14,102-0330134-3360267,BP-CS-BU,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Blue Center Stripe
+9-Sep-14,102-0330134-3360267,BP-CS-BU,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Blue Center Stripe
+9-Sep-14,102-0330134-3360267,BP-CS-BU,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Blue Center Stripe
+9-Sep-14,102-0330134-3360267,BP-CS-BU,Refund,Promo rebates,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Blue Center Stripe
+9-Sep-14,102-0330134-3360267,BP-CS-BU,Refund,Other,Shipping,($7.99),,DadGear Backpack Diaper Bag - Blue Center Stripe
+6-Sep-14,102-0606383-8134660,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,102-0606383-8134660,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,102-0606383-8134660,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,102-0606383-8134660,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+3-Sep-14,102-1382550-8349817,BP-PR-GY,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Grey Professional
+3-Sep-14,102-1382550-8349817,BP-PR-GY,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Grey Professional
+3-Sep-14,102-1382550-8349817,BP-PR-GY,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Grey Professional
+3-Sep-14,102-1710553-8829844,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,102-1710553-8829844,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,102-1710553-8829844,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,102-1710553-8829844,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,102-2453456-0972244,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,102-2453456-0972244,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,102-2453456-0972244,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,102-2453456-0972244,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-5292115-8964225,BP-VT-WT,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,102-5292115-8964225,BP-VT-WT,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,102-5292115-8964225,BP-VT-WT,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,102-5292115-8964225,BP-VT-WT,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,102-5292115-8964225,BP-VT-WT,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Wicked White
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($7.99),,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Solid Black
+8-Sep-14,102-6733893-6838651,CR-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,102-7072495-1792229,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,102-7072495-1792229,BP-PR-GY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,102-7072495-1792229,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,102-7072495-1792229,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,102-7072495-1792229,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+8-Sep-14,102-7385578-8698625,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,102-7385578-8698625,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,102-7385578-8698625,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,102-7385578-8698625,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($3.64),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,102-9373125-5321053,BP-BA-BK,Order Payment,Other,Shipping,$3.64 ,,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,103-0500864-7329065,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,103-0500864-7329065,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,103-0500864-7329065,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,103-0500864-7329065,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,103-0500864-7329065,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,103-5062662-5736266,BP-RS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Retro Stripe
+7-Sep-14,103-5062662-5736266,BP-RS-GN,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Green Retro Stripe
+7-Sep-14,103-5062662-5736266,BP-RS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Green Retro Stripe
+7-Sep-14,103-5062662-5736266,BP-RS-GN,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Green Retro Stripe
+7-Sep-14,103-5062662-5736266,BP-RS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Retro Stripe
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,103-5098056-8549045,BP-BA-BK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Promo rebates,Shipping,($5.49),,DadGear Backpack Diaper Bag - Red Retro Stripe
+6-Sep-14,103-7913318-6933857,BP-RS-RD,Order Payment,Other,Shipping,$5.49 ,,DadGear Backpack Diaper Bag - Red Retro Stripe
+9-Sep-14,103-8015166-6663419,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,103-8015166-6663419,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,103-8015166-6663419,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,103-8015166-6663419,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,103-9548716-4718644,BP-VT-WT,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Wicked White
+7-Sep-14,104-0613995-5506642,MB-CS-GN,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Green Center Stripe
+7-Sep-14,104-0613995-5506642,MB-CS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Messenger Diaper Bag - Green Center Stripe
+7-Sep-14,104-0613995-5506642,MB-CS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Messenger Diaper Bag - Green Center Stripe
+7-Sep-14,104-0613995-5506642,MB-CS-GN,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Green Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Amazon fees,Shipping chargeback,($7.99),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,104-1172878-4337851,BP-CS-RD,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Red Center Stripe
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($14.95),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-2449646-3377830,BP-BA-BK,Order Payment,Other,Shipping,$14.95 ,,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,104-3830090-8727425,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,104-3830090-8727425,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,104-3830090-8727425,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,104-3830090-8727425,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Amazon fees,Gift wrap chargeback,($5.99),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Amazon fees,Shipping chargeback,($4.47),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Other,Gift wrap,$5.99 ,,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-4668752-4835412,BP-CS-GN,Order Payment,Other,Shipping,$4.47 ,,DadGear Backpack Diaper Bag - Green Center Stripe
+9-Sep-14,104-5745939-7749861,BP-BA-CF,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,104-5745939-7749861,BP-BA-CF,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,104-5745939-7749861,BP-BA-CF,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,104-5745939-7749861,BP-BA-CF,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Camouflage
+6-Sep-14,104-6201915-5583428,BP-CS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-6201915-5583428,BP-CS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-6201915-5583428,BP-CS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Green Center Stripe
+6-Sep-14,104-6201915-5583428,BP-CS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,104-6751543-2106664,BP-BA-BK,Other,FBA Inventory Reimbursement - Customer Return,,$70.34 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Promo rebates,Shipping,($5.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+4-Sep-14,104-8715873-8601004,BP-CS-OR,Order Payment,Other,Shipping,$5.50 ,,DadGear Backpack Diaper Bag - Orange Center Stripe
+6-Sep-14,104-9113017-7718659,,Refund,Other,Other concession,($10.59),,
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,104-9113017-7718659,BP-BA-BK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,104-9557572-2284247,CL-CO-GY,Order Payment,Amazon fees,Commission,($16.50),,DadGear The Classic Messenger Diaper Bag - Steel
+7-Sep-14,104-9557572-2284247,CL-CO-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear The Classic Messenger Diaper Bag - Steel
+7-Sep-14,104-9557572-2284247,CL-CO-GY,Order Payment,Amazon fees,FBA weight based fee,($2.51),,DadGear The Classic Messenger Diaper Bag - Steel
+7-Sep-14,104-9557572-2284247,CL-CO-GY,Order Payment,Product charges,,$109.99 ,1,DadGear The Classic Messenger Diaper Bag - Steel
+6-Sep-14,105-0640833-2206611,MB-RS-OR,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Orange Retro Stripe
+6-Sep-14,105-0640833-2206611,MB-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Messenger Diaper Bag - Orange Retro Stripe
+6-Sep-14,105-0640833-2206611,MB-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Messenger Diaper Bag - Orange Retro Stripe
+6-Sep-14,105-0640833-2206611,MB-RS-OR,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Orange Retro Stripe
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($4.25),,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Messenger Diaper Bag - Solid Black
+8-Sep-14,105-1138734-3901828,MB-BA-BK,Order Payment,Other,Shipping,$4.25 ,,DadGear Messenger Diaper Bag - Solid Black
+7-Sep-14,105-1533417-8964206,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,105-1533417-8964206,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,105-1533417-8964206,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,105-1533417-8964206,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,105-1533417-8964206,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+7-Sep-14,105-2074914-0323461,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,105-2074914-0323461,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,105-2074914-0323461,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,105-2074914-0323461,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,105-2437461-6417826,BP-GA-AA,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Ancient Argyle
+7-Sep-14,105-2437461-6417826,BP-GA-AA,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Ancient Argyle
+7-Sep-14,105-2437461-6417826,BP-GA-AA,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Ancient Argyle
+7-Sep-14,105-2437461-6417826,BP-GA-AA,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Ancient Argyle
+8-Sep-14,105-4185121-6003413,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-4185121-6003413,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-4185121-6003413,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-4185121-6003413,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-5854159-6411405,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-5854159-6411405,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-5854159-6411405,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-5854159-6411405,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-7327455-2997834,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-7327455-2997834,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-7327455-2997834,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,105-7327455-2997834,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Amazon fees,Shipping chargeback,($5.50),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,105-7333029-0561031,BP-BA-NY,Order Payment,Other,Shipping,$5.50 ,,DadGear Backpack Diaper Bag - Solid Navy
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Amazon fees,Commission,($16.50),,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Amazon fees,FBA weight based fee,($2.51),,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Product charges,,$109.99 ,1,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Promo rebates,Shipping,($3.83),,DadGear The Classic Messenger Diaper Bag - Coal Black
+3-Sep-14,105-7936382-1791407,CL-CO-BK,Order Payment,Other,Shipping,$3.83 ,,DadGear The Classic Messenger Diaper Bag - Coal Black
+8-Sep-14,105-9931491-5977855,BP-RS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Retro Stripe
+8-Sep-14,105-9931491-5977855,BP-RS-GN,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Green Retro Stripe
+8-Sep-14,105-9931491-5977855,BP-RS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Green Retro Stripe
+8-Sep-14,105-9931491-5977855,BP-RS-GN,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Green Retro Stripe
+8-Sep-14,105-9931491-5977855,BP-RS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-1375532-6664231,BP-RS-BU,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Amazon fees,Shipping chargeback,($9.46),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+6-Sep-14,106-3568794-1591440,BP-RS-BU,Order Payment,Other,Shipping,$9.46 ,,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-4940011-9421813,BP-BA-BK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,106-5074974-1575408,BP-PR-GY,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,106-5074974-1575408,BP-PR-GY,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,106-5074974-1575408,BP-PR-GY,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,106-5074974-1575408,BP-PR-GY,Refund,Promo rebates,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,106-5074974-1575408,BP-PR-GY,Refund,Other,Shipping,($7.99),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Amazon fees,FBA weight based fee,($1.34),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Amazon fees,Gift wrap chargeback,($5.99),,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Concentric Circles
+9-Sep-14,106-5503484-2781814,BP-GA-CC,Order Payment,Other,Gift wrap,$5.99 ,,DadGear Backpack Diaper Bag - Concentric Circles
+4-Sep-14,106-6923543-3739404,BP-BA-NY,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Solid Navy
+4-Sep-14,106-6923543-3739404,BP-BA-NY,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Solid Navy
+4-Sep-14,106-6923543-3739404,BP-BA-NY,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Solid Navy
+4-Sep-14,106-6923543-3739404,BP-BA-NY,Refund,Promo rebates,Shipping,$5.50 ,,DadGear Backpack Diaper Bag - Solid Navy
+4-Sep-14,106-6923543-3739404,BP-BA-NY,Refund,Other,Shipping,($5.50),,DadGear Backpack Diaper Bag - Solid Navy
+7-Sep-14,106-7077505-9049816,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+7-Sep-14,106-7077505-9049816,BP-PR-GY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Grey Professional
+7-Sep-14,106-7077505-9049816,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+7-Sep-14,106-7077505-9049816,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+7-Sep-14,106-7077505-9049816,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,106-9495233-3119461,BP-GA-AA,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Ancient Argyle
+4-Sep-14,106-9495233-3119461,BP-GA-AA,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Ancient Argyle
+4-Sep-14,106-9495233-3119461,BP-GA-AA,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Ancient Argyle
+4-Sep-14,106-9495233-3119461,BP-GA-AA,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Ancient Argyle
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,106-9516340-2505004,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Promo rebates,Shipping,($4.67),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,107-4420231-9294637,BP-GA-MA,Order Payment,Other,Shipping,$4.67 ,,DadGear Backpack Diaper Bag - Maori Night
+4-Sep-14,107-4641351-7479447,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+4-Sep-14,107-4641351-7479447,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+4-Sep-14,107-4641351-7479447,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+4-Sep-14,107-4641351-7479447,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,107-6250938-2293817,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,107-6250938-2293817,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,107-6250938-2293817,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,107-6250938-2293817,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,107-6250938-2293817,BP-RS-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,107-7735651-3905008,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,107-7735651-3905008,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,107-7735651-3905008,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,107-7735651-3905008,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,107-9318253-2219432,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,107-9318253-2219432,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,107-9318253-2219432,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,107-9318253-2219432,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,108-4457189-1281055,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,108-4457189-1281055,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,108-4457189-1281055,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,108-4457189-1281055,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Promo rebates,Shipping,($5.50),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+4-Sep-14,108-4957911-0564213,BP-RS-OR,Order Payment,Other,Shipping,$5.50 ,,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,108-5756968-5864206,BP-BA-UC,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Universal Camo
+8-Sep-14,108-5756968-5864206,BP-BA-UC,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Universal Camo
+8-Sep-14,108-5756968-5864206,BP-BA-UC,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Universal Camo
+8-Sep-14,108-5756968-5864206,BP-BA-UC,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Universal Camo
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Green Center Stripe
+4-Sep-14,108-5816856-0670605,BP-CS-GN,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Green Center Stripe
+9-Sep-14,108-5900519-1495412,BP-RS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,108-5900519-1495412,BP-RS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,108-5900519-1495412,BP-RS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,108-5900519-1495412,BP-RS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,108-5900519-1495412,BP-RS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($25.95),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6604154-5909851,BP-BA-BK,Order Payment,Other,Shipping,$25.95 ,,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,108-6791225-3897053,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,109-1371503-7186634,CR-BA-BK,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,109-1371503-7186634,CR-BA-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,109-1371503-7186634,CR-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,109-1371503-7186634,CR-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,109-1371503-7186634,CR-BA-BK,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-1601589-2385032,BP-PR-GY,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Grey Professional
+8-Sep-14,109-1903710-1550646,BP-CS-RD,Other,FBA Inventory Reimbursement - Customer Return,,$72.35 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+10-Sep-14,109-5297171-9179455,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-5297171-9179455,BP-PR-GY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-5297171-9179455,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-5297171-9179455,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+10-Sep-14,109-5297171-9179455,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+8-Sep-14,109-5530839-6691458,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,109-5530839-6691458,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,109-5530839-6691458,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,109-5530839-6691458,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,109-5530839-6691458,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,109-5660011-4841006,CR-RS-GN,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Green Retro Stripe
+9-Sep-14,109-5660011-4841006,CR-RS-GN,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Courier Diaper Bag - Green Retro Stripe
+9-Sep-14,109-5660011-4841006,CR-RS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Courier Diaper Bag - Green Retro Stripe
+9-Sep-14,109-5660011-4841006,CR-RS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Green Retro Stripe
+9-Sep-14,109-5660011-4841006,CR-RS-GN,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Green Retro Stripe
+9-Sep-14,109-6061058-5981005,BP-PR-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,109-6061058-5981005,BP-PR-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,109-6061058-5981005,BP-PR-GY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Grey Professional
+9-Sep-14,109-6061058-5981005,BP-PR-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Grey Professional
+4-Sep-14,109-6061058-5981005,BP-RS-GN,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Green Retro Stripe
+4-Sep-14,109-6061058-5981005,BP-RS-GN,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Green Retro Stripe
+4-Sep-14,109-6061058-5981005,BP-RS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Green Retro Stripe
+4-Sep-14,109-6061058-5981005,BP-RS-GN,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Green Retro Stripe
+4-Sep-14,109-6061058-5981005,BP-RS-GN,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Green Retro Stripe
+3-Sep-14,109-6131658-9637012,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+3-Sep-14,109-6131658-9637012,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+3-Sep-14,109-6131658-9637012,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+3-Sep-14,109-6131658-9637012,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,109-7807723-9569826,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-7807723-9569826,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-7807723-9569826,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-7807723-9569826,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-9548582-2067458,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-9548582-2067458,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-9548582-2067458,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,109-9548582-2067458,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Silver Center Stripe
+4-Sep-14,110-0844570-8180232,BP-CS-GY,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Silver Center Stripe
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Amazon fees,Gift wrap chargeback,($5.99),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Promo rebates,Shipping,($5.49),,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Other,Gift wrap,$5.99 ,,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-0901793-2493806,CR-BA-BK,Order Payment,Other,Shipping,$5.49 ,,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,110-1796636-6728218,BP-RS-GN,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Green Retro Stripe
+10-Sep-14,110-1796636-6728218,BP-RS-GN,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Green Retro Stripe
+10-Sep-14,110-1796636-6728218,BP-RS-GN,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Green Retro Stripe
+9-Sep-14,110-2314855-0290650,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,110-2314855-0290650,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,110-2314855-0290650,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,110-2314855-0290650,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+9-Sep-14,110-2314855-0290650,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+6-Sep-14,110-4162944-6184237,CR-RS-OR,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Orange Retro Stripe
+6-Sep-14,110-4162944-6184237,CR-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Courier Diaper Bag - Orange Retro Stripe
+6-Sep-14,110-4162944-6184237,CR-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Orange Retro Stripe
+6-Sep-14,110-4162944-6184237,CR-RS-OR,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Orange Retro Stripe
+7-Sep-14,110-4757470-9952248,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-4757470-9952248,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-4757470-9952248,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-4757470-9952248,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,110-5898184-9235423,BP-RS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,110-5898184-9235423,BP-RS-OR,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,110-5898184-9235423,BP-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,110-5898184-9235423,BP-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,110-5898184-9235423,BP-RS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,110-6030610-6066606,BP-BA-BK,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,110-6030610-6066606,BP-BA-BK,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,110-6030610-6066606,BP-BA-BK,Refund,Amazon fees,Shipping chargeback,$3.99 ,,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,110-6030610-6066606,BP-BA-BK,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,110-6030610-6066606,BP-BA-BK,Refund,Other,Shipping,($3.99),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,110-6123184-8515411,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,110-6123184-8515411,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,110-6123184-8515411,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+3-Sep-14,110-6123184-8515411,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,110-7611113-4692264,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+6-Sep-14,110-7611113-4692264,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+6-Sep-14,110-7611113-4692264,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+6-Sep-14,110-7611113-4692264,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+7-Sep-14,110-9216640-4750622,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-9216640-4750622,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-9216640-4750622,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,110-9216640-4750622,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,110-9920489-2153059,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,110-9920489-2153059,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,110-9920489-2153059,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,110-9920489-2153059,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+9-Sep-14,111-0980107-8731440,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-0980107-8731440,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-0980107-8731440,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-0980107-8731440,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,111-1842846-7610641,BP-CS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,111-1842846-7610641,BP-CS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,111-1842846-7610641,BP-CS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,111-1842846-7610641,BP-CS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,111-2162041-5617820,BP-CS-OR,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Amazon fees,Shipping chargeback,($14.95),,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Plaid
+8-Sep-14,111-4051421-2861815,BP-GA-BP,Order Payment,Other,Shipping,$14.95 ,,DadGear Backpack Diaper Bag - Black Plaid
+10-Sep-14,111-6082217-0745833,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+10-Sep-14,111-6082217-0745833,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+10-Sep-14,111-6082217-0745833,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+10-Sep-14,111-6082217-0745833,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,111-6367386-9407465,BP-BA-BK,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,111-6367386-9407465,BP-BA-BK,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,111-6367386-9407465,BP-BA-BK,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7213612-3970627,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,111-7626387-2733068,BP-BA-CF,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,111-7626387-2733068,BP-BA-CF,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,111-7626387-2733068,BP-BA-CF,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Camouflage
+9-Sep-14,111-7626387-2733068,BP-BA-CF,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Camouflage
+8-Sep-14,111-7648677-3709869,BP-D-MRKEE,Order Payment,Amazon fees,Commission,($15.00),,DaisyGear Backpack Diaper Bag - Marquee Floral
+8-Sep-14,111-7648677-3709869,BP-D-MRKEE,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DaisyGear Backpack Diaper Bag - Marquee Floral
+8-Sep-14,111-7648677-3709869,BP-D-MRKEE,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DaisyGear Backpack Diaper Bag - Marquee Floral
+8-Sep-14,111-7648677-3709869,BP-D-MRKEE,Order Payment,Product charges,,$99.99 ,1,DaisyGear Backpack Diaper Bag - Marquee Floral
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Amazon fees,Shipping chargeback,($4.78),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,111-8315475-7647440,BP-BA-BK,Order Payment,Other,Shipping,$4.78 ,,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+5-Sep-14,112-1007132-0114659,BP-RS-BK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Black Retro Stripe
+9-Sep-14,112-1525879-5041037,CL-CO-BK,Order Payment,Amazon fees,Commission,($16.50),,DadGear The Classic Messenger Diaper Bag - Coal Black
+9-Sep-14,112-1525879-5041037,CL-CO-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear The Classic Messenger Diaper Bag - Coal Black
+9-Sep-14,112-1525879-5041037,CL-CO-BK,Order Payment,Amazon fees,FBA weight based fee,($2.51),,DadGear The Classic Messenger Diaper Bag - Coal Black
+9-Sep-14,112-1525879-5041037,CL-CO-BK,Order Payment,Product charges,,$109.99 ,1,DadGear The Classic Messenger Diaper Bag - Coal Black
+9-Sep-14,112-1525879-5041037,MB-BA-UC,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Universal Camo
+9-Sep-14,112-1525879-5041037,MB-BA-UC,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Messenger Diaper Bag - Universal Camo
+9-Sep-14,112-1525879-5041037,MB-BA-UC,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Messenger Diaper Bag - Universal Camo
+9-Sep-14,112-1525879-5041037,MB-BA-UC,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Messenger Diaper Bag - Universal Camo
+9-Sep-14,112-1525879-5041037,MB-BA-UC,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Universal Camo
+9-Sep-14,112-2533287-8266644,BP-RS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,112-2533287-8266644,BP-RS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,112-2533287-8266644,BP-RS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,112-2533287-8266644,BP-RS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+9-Sep-14,112-2533287-8266644,BP-RS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+8-Sep-14,112-3116896-9016267,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,112-3116896-9016267,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,112-3116896-9016267,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,112-3116896-9016267,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Promo rebates,Shipping,($5.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,112-4055016-6275411,BP-BA-BK,Order Payment,Other,Shipping,$5.50 ,,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,112-5684470-5021046,MB-RS-GN,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Green Retro Stripe
+9-Sep-14,112-5684470-5021046,MB-RS-GN,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Messenger Diaper Bag - Green Retro Stripe
+9-Sep-14,112-5684470-5021046,MB-RS-GN,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Messenger Diaper Bag - Green Retro Stripe
+9-Sep-14,112-5684470-5021046,MB-RS-GN,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Green Retro Stripe
+9-Sep-14,112-5684470-5021046,MB-RS-GN,Order Payment,Promo rebates,,$0.00 ,1,DadGear Messenger Diaper Bag - Green Retro Stripe
+6-Sep-14,112-7019242-5915430,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,112-7019242-5915430,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,112-7019242-5915430,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,112-7019242-5915430,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,112-7019242-5915430,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,112-9137250-7216233,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,112-9137250-7216233,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,112-9137250-7216233,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,112-9137250-7216233,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,112-9137250-7216233,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Pink Retro Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Pink Retro Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Pink Retro Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Pink Retro Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Pink Retro Stripe
+6-Sep-14,113-0082017-3472268,BP-RS-PK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Pink Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Promo rebates,Shipping,($4.92),,DadGear Backpack Diaper Bag - Orange Retro Stripe
+3-Sep-14,113-0460818-6225034,BP-RS-OR,Order Payment,Other,Shipping,$4.92 ,,DadGear Backpack Diaper Bag - Orange Retro Stripe
+8-Sep-14,113-1637342-2365025,BP-CS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Center Stripe
+8-Sep-14,113-1637342-2365025,BP-CS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Center Stripe
+8-Sep-14,113-1637342-2365025,BP-CS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Center Stripe
+8-Sep-14,113-1637342-2365025,BP-CS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Center Stripe
+8-Sep-14,113-1637342-2365025,BP-CS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Center Stripe
+7-Sep-14,113-1915392-9258647,CL-CO-CB,Order Payment,Amazon fees,Commission,($16.50),,DadGear The Classic Messenger Diaper Bag - Coffee Brown
+7-Sep-14,113-1915392-9258647,CL-CO-CB,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear The Classic Messenger Diaper Bag - Coffee Brown
+7-Sep-14,113-1915392-9258647,CL-CO-CB,Order Payment,Amazon fees,FBA weight based fee,($2.51),,DadGear The Classic Messenger Diaper Bag - Coffee Brown
+7-Sep-14,113-1915392-9258647,CL-CO-CB,Order Payment,Product charges,,$109.99 ,1,DadGear The Classic Messenger Diaper Bag - Coffee Brown
+8-Sep-14,113-4127904-2209027,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,113-4127904-2209027,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,113-4127904-2209027,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,113-4127904-2209027,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,113-4493270-5142643,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,113-4493270-5142643,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,113-4493270-5142643,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,113-4493270-5142643,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,113-7170918-8653817,BP-CS-OR,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,114-0170336-1649806,BP-CS-RD,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,114-0170336-1649806,BP-CS-RD,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,114-0170336-1649806,BP-CS-RD,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,114-0170336-1649806,BP-CS-RD,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Red Center Stripe
+8-Sep-14,114-0170336-1649806,BP-CS-RD,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Red Center Stripe
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Promo rebates,Shipping,($3.72),,DadGear Backpack Diaper Bag - Maori Night
+5-Sep-14,114-0289559-4298673,BP-GA-MA,Order Payment,Other,Shipping,$3.72 ,,DadGear Backpack Diaper Bag - Maori Night
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Amazon fees,Commission,($9.00),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Product charges,,$59.99 ,1,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Promo rebates,Shipping,($3.71),,DadGear Courier Diaper Bag - Solid Black
+4-Sep-14,114-0289559-4298673,CR-BA-BK,Order Payment,Other,Shipping,$3.71 ,,DadGear Courier Diaper Bag - Solid Black
+10-Sep-14,114-2058059-7938639,BP-CS-GN,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Green Center Stripe
+10-Sep-14,114-2058059-7938639,BP-CS-GN,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Green Center Stripe
+10-Sep-14,114-2058059-7938639,BP-CS-GN,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Green Center Stripe
+8-Sep-14,114-5632418-8739462,BP-BA-NY,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Navy
+8-Sep-14,114-5632418-8739462,BP-BA-NY,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Solid Navy
+8-Sep-14,114-5632418-8739462,BP-BA-NY,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Solid Navy
+8-Sep-14,114-5632418-8739462,BP-BA-NY,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Solid Navy
+8-Sep-14,114-5632418-8739462,BP-BA-NY,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Navy
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,114-5680708-8837006,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6474946-4751430,BP-BA-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Solid Black
+5-Sep-14,114-6683449-1004268,BP-CS-OR,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Orange Center Stripe
+5-Sep-14,114-6683449-1004268,BP-CS-OR,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Orange Center Stripe
+5-Sep-14,114-6683449-1004268,BP-CS-OR,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Orange Center Stripe
+3-Sep-14,114-6834728-6356244,BP-RS-BU,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+3-Sep-14,114-6834728-6356244,BP-RS-BU,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+3-Sep-14,114-6834728-6356244,BP-RS-BU,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+3-Sep-14,114-6834728-6356244,BP-RS-BU,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DadGear Backpack Diaper Bag - Blue Retro Stripe
+3-Sep-14,114-6834728-6356244,BP-RS-BU,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Blue Retro Stripe
+5-Sep-14,114-6959983-2785854,SP2-D-GYDTS,Order Payment,Amazon fees,Commission,($11.25),,DaisyGear Sport Diaper Bag - Grey Dots
+5-Sep-14,114-6959983-2785854,SP2-D-GYDTS,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DaisyGear Sport Diaper Bag - Grey Dots
+5-Sep-14,114-6959983-2785854,SP2-D-GYDTS,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DaisyGear Sport Diaper Bag - Grey Dots
+5-Sep-14,114-6959983-2785854,SP2-D-GYDTS,Order Payment,Amazon fees,FBA weight based fee,($1.73),,DaisyGear Sport Diaper Bag - Grey Dots
+5-Sep-14,114-6959983-2785854,SP2-D-GYDTS,Order Payment,Product charges,,$74.99 ,1,DaisyGear Sport Diaper Bag - Grey Dots
+4-Sep-14,114-7220678-6731441,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,114-7220678-6731441,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,114-7220678-6731441,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,114-7220678-6731441,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Amazon fees,Shipping chargeback,($3.99),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,114-8178714-4878634,BP-RS-BK,Order Payment,Other,Shipping,$3.99 ,,DadGear Backpack Diaper Bag - Black Retro Stripe
+8-Sep-14,114-8512078-4573853,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,114-8512078-4573853,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,114-8512078-4573853,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,114-8512078-4573853,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,114-9857453-5181013,BP-CS-OR,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,114-9857453-5181013,BP-CS-OR,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,114-9857453-5181013,BP-CS-OR,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Orange Center Stripe
+8-Sep-14,114-9857453-5181013,BP-CS-OR,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Orange Center Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Promo rebates,,$0.00 ,1,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,115-0420236-9597024,MB-RS-BK,Order Payment,Other,Shipping,$7.99 ,,DadGear Messenger Diaper Bag - Black Retro Stripe
+6-Sep-14,115-3047264-2010665,BP-RS-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,115-3047264-2010665,BP-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,115-3047264-2010665,BP-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Black Retro Stripe
+6-Sep-14,115-3047264-2010665,BP-RS-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Black Retro Stripe
+7-Sep-14,115-6172064-7301855,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,115-6172064-7301855,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,115-6172064-7301855,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+7-Sep-14,115-6172064-7301855,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,115-7367895-1452215,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,115-7367895-1452215,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,115-7367895-1452215,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,115-7367895-1452215,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+6-Sep-14,115-8335549-7094628,MB-RS-BK,Order Payment,Amazon fees,Commission,($12.00),,DadGear Messenger Diaper Bag - Black Retro Stripe
+6-Sep-14,115-8335549-7094628,MB-RS-BK,Order Payment,Amazon fees,FBA per order fulfillment fee,($1.00),,DadGear Messenger Diaper Bag - Black Retro Stripe
+6-Sep-14,115-8335549-7094628,MB-RS-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($1.02),,DadGear Messenger Diaper Bag - Black Retro Stripe
+6-Sep-14,115-8335549-7094628,MB-RS-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Messenger Diaper Bag - Black Retro Stripe
+6-Sep-14,115-8335549-7094628,MB-RS-BK,Order Payment,Product charges,,$79.99 ,1,DadGear Messenger Diaper Bag - Black Retro Stripe
+9-Sep-14,116-0782432-5194649,BP-RS-RD,Refund,Amazon fees,Commission,$13.50 ,,DadGear Backpack Diaper Bag - Red Retro Stripe
+9-Sep-14,116-0782432-5194649,BP-RS-RD,Refund,Amazon fees,Refund commission,($2.70),,DadGear Backpack Diaper Bag - Red Retro Stripe
+9-Sep-14,116-0782432-5194649,BP-RS-RD,Refund,Product charges,,($89.99),1,DadGear Backpack Diaper Bag - Red Retro Stripe
+9-Sep-14,116-0782432-5194649,BP-RS-RD,Refund,Promo rebates,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Red Retro Stripe
+9-Sep-14,116-0782432-5194649,BP-RS-RD,Refund,Other,Shipping,($7.99),,DadGear Backpack Diaper Bag - Red Retro Stripe
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Promo rebates,,$0.00 ,1,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Promo rebates,Shipping,($7.99),,DadGear Backpack Diaper Bag - Maori Night
+3-Sep-14,116-1042260-8035466,BP-GA-MA,Order Payment,Other,Shipping,$7.99 ,,DadGear Backpack Diaper Bag - Maori Night
+4-Sep-14,116-7764820-0821002,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,116-7764820-0821002,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,116-7764820-0821002,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+4-Sep-14,116-7764820-0821002,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,116-8395016-9472265,BP-BA-BK,Order Payment,Amazon fees,Commission,($13.50),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,116-8395016-9472265,BP-BA-BK,Order Payment,Amazon fees,FBA per unit fulfillment fee,($4.03),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,116-8395016-9472265,BP-BA-BK,Order Payment,Amazon fees,FBA weight based fee,($2.12),,DadGear Backpack Diaper Bag - Solid Black
+8-Sep-14,116-8395016-9472265,BP-BA-BK,Order Payment,Product charges,,$89.99 ,1,DadGear Backpack Diaper Bag - Solid Black
+9-Sep-14,ve95j2M136,,Service Fees,Amazon fees,FBA Return Fee,($1.80),,
+7-Sep-14,,,Service Fees,Amazon fees,FBA storage fee,($121.07),,

@@ -1,0 +1,2 @@
+
+<cfoutput>#rc.response#</cfoutput>

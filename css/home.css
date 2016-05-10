@@ -1,0 +1,58 @@
+body {
+	background-image:url(/images/loginback.png);
+}
+#head {
+	height:228px;
+	width:1100px;
+	margin:0 auto;
+	border:0px solid red;
+	position:relative;
+}
+#homepic {
+	height:495px;
+	width:1332px;
+	margin:17px auto 0;
+	background-image:url(/images/flowchart.jpg);
+	background-repeat:no-repeat;
+}
+#logolarge {
+position:absolute;
+top:70px;
+}
+#loginform {
+position:absolute;
+right:100px;
+top:40px;
+}
+#confirmform {
+position:absolute;
+right:100px;
+top:40px;
+  border:8px solid #00a5d9;
+  border-radius:10px;
+  padding:25px;
+  text-align:center;
+}
+#loginform ul {
+border:0px solid red;
+width:250px;
+}
+#loginform label {
+width:100px;
+font-size:12px;
+text-align:right;
+margin-right:5px;
+}
+#loginform input {
+font-size:12px;
+margin-bottom:10px;
+background-color:#f1f1f1 !important;
+}
+#lock {
+margin:0 0 15px 82px;
+}
+.loginmessage {
+border:0px solid red !important;
+margin:0 0 5px !important;
+padding:0 !important;
+}

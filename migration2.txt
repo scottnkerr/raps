@@ -1,0 +1,6 @@
+05/09/2013 09:31 AM -Locations query has 5637 records
+05/09/2013 09:32 AM - Client info was not found for 3621 locations. 2016 applications should have been migrated.
+05/09/2013 10:08 AM -Locations query has 5637 records
+05/09/2013 10:11 AM - Client info was not found for 3621 locations. 2016 applications should have been migrated.
+05/09/2013 10:18 AM -Locations query has 5637 records
+05/09/2013 10:25 AM - Client info was not found for 3621 locations. 2016 applications should have been migrated.

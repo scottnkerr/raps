@@ -1,0 +1,138 @@
+
+.wijmo-dropdown-label, .wijmo-dropdown-item {
+font-size:11px;
+}
+.wijmo-wijdropdown label.wijmo-dropdown-label {
+padding:3px;
+}
+
+
+.ui-widget-content {
+border-color:#a6a5a5;
+color:#333333;
+}
+
+.ui-widget {
+font-size:11px;
+
+}
+.wijmo-wijtextbox {
+padding:3px;
+border-color:#a6a5a5 !important;
+color:#333333 !important;
+text-align:right;
+background-color:#fbfbfb !important;
+}
+#appcontainer .wijmo-wijtextbox {
+	background-color:#f1f1f1 !important;
+}
+
+.pblast .wijmo-wijtextbox {
+width:70px;
+color:#333333 !important;
+}
+.wijmo-checkbox .wijmo-checkbox-box, div.wijmo-wijradio-box {
+	border-color:#a6a5a5;
+margin-top:-1px !important;
+height:15px;
+
+}
+
+.wijmo-wijmenu-horizontal .wijmo-wijmenu-link {
+padding-left:7px;
+font-size:12px;
+}
+#tabs a {
+font-size:12px;
+}
+#tabs .wijmo-wijtextbox {
+padding:2px;
+font-size: 11px;
+float:left;
+margin-right:2px;
+}
+
+.wijmo-wijgrid-alternatingrow
+{
+background-color: #ffffff;
+background-image: none;
+}
+.wijmo-wijgrid-headertext {
+text-align:left;
+}
+
+.wijmo-wijinput-date {
+padding:2px !important;
+color:black;
+}
+.wijmo-wijinput {
+border:1px solid #a6a5a5 !important;
+margin-right:2px;
+width:86px !important;
+}
+.wijmo-wijinput .wijmo-wijinput-trigger .ui-icon {
+	margin-top:10%;
+}
+.wijmo-wijtextbox.ui-state-focus{
+background-color: #d5eef6 !important;
+border-color:#00a5d9 !important;
+}
+.ui-button {
+font-size:12px !important;
+}
+.wijmo-wijgrid .wijgridtd {
+	padding:4px;
+}
+input.error {
+	border:1px solid red !important;
+}
+label.error {
+display:inline;
+color:red;
+}
+.wijmo-wijgrid .ui-state-highlight {
+background-image:none;
+}
+.wijmo-wijgrid-row .ui-state-highlight {
+border-color:#a6a5a5 !important;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+	color:#333333;
+}
+.doclist .wijmo-checkbox-box:nth-child(2) {
+   margin:4px !important; 
+  }
+.doclist .includeheader .wijmo-checkbox-box {
+   margin:0px 5px 0 15px !important; 
+  }
+ .includeheader .docname {
+ margin-top:-4px;
+  border:0px solid;
+}
+.doclist .includefooter .wijmo-checkbox-box {
+   margin:-2px 5px 0 15px !important; 
+  }
+ .includefooter .docname {
+ margin-top:-6px;
+  border:0px solid;
+}
+  .wijmo-wijeditor-container {
+  margin-top:30px;
+}
+.wijmo-checkbox .ui-state-focus, .selectbox2:focus {
+border: 1px solid #00A6DD !important;
+}
+.bphoneli .wijmo-wijinput {
+width:132px !important;
+background-color:#fff !important;
+margin-right:0 !important;
+}
+.contactphoneli .wijmo-wijinput {
+width:169px !important;
+background-color:#fff !important;
+margin-right:0 !important;
+}
+
+.phonenumber {
+	padding:3px !important;
+}
