@@ -1,4 +1,5 @@
 <cfif structkeyexists(rc,"client")>
+
 	<cfparam name="client_id"  default="#rc.client.client_id#">
 	<cfparam name="rcaffiliation_id"  default="#rc.client.affiliation_id#">
 	<cfparam name="rcclient_type_id"  default="#rc.client.client_type_id#">

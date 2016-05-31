@@ -8,9 +8,8 @@ $(document).ready(function () {
 			// Disable caching of AJAX responses because IE sucks donkey dick 
 			cache: false 
 		});	
-$(".phonenumber").wijinputmask({
-      mask: '(999) 000-0000',  			
-});											
+	
+$('.phonenumber').inputmask({"mask": "(999) 999-9999"});							
 //save prompt if changes are made
 /*
     $(':input').not('.exclude').change(function(){
