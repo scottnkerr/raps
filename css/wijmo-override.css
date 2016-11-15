@@ -135,4 +135,8 @@ margin-right:0 !important;
 
 .phonenumber {
 	padding:3px !important;
+	    background-color: #fbfbfb !important;
+    border: 1px solid #a6a5a5 !important;
+    color: #333333 !important;
+		border-radius: 4px;
 }

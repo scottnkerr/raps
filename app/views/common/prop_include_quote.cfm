@@ -275,6 +275,17 @@ td, th {font-size:12px; text-align:left; line-height:12px;}
     <td style="text-align:right;">$#decimalFormat(rating.filingfee)#</td>
   </tr> 
   </cfif> 
+  <!---custom tax fields--->
+  <cfloop from="1" to="5" index="i">
+          <cfset thislabel = evaluate("rating.custom_tax_#i#_label")>
+          <cfset thisamount = evaluate("rating.custom_tax_#i#")> 
+   <cfif trim(thislabel) neq ''>
+   <tr>
+    <td>#thislabel#</td>
+    <td style="text-align:right;">$#decimalFormat(thisamount)#</td>
+  </tr>  
+  </cfif>
+  </cfloop>
  <!--- 
   <cfif rating.rpgfee gt 0> 
   <tr>

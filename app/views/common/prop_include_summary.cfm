@@ -73,6 +73,18 @@ table.fullwidth tr td:nth-child(2) {
     <td style="text-align:right;">$#decimalFormat(totals.totalglstate)#</td>
   </tr>
 </cfif>
+        <!---custom taxes--->
+        <cfloop from="1" to="5" index="i">
+          <cfset thiscustomtotal = evaluate("totals.totalcustomtax_#i#")>
+          <cfset thislabel = evaluate("rating.custom_tax_#i#_label")>
+          <cfif thiscustomtotal gt 0>
+  <tr>
+    <td >#thislabel#</td>
+    <td style="font-weight:bold; text-align:right;">$#decimalFormat(thiscustomtotal)#</td>
+  </tr>          
+          </cfif>
+
+        </cfloop>
   <tr>
     <td >Liability Total</td>
     <td style="font-weight:bold; text-align:right;">$#decimalFormat(totals.totalgl)#</td>

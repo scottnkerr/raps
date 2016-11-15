@@ -346,6 +346,10 @@
     <cfset totals.totalproptaxes = 0>
     <cfset totals.totalpropequip = 0>
     <cfset totals.totalprop = 0>
+  <!---custom tax fields--->
+  <cfloop from="1" to="5" index="i">
+     <cfset "totals.totalcustomtax_#i#" = 0>
+  </cfloop>
 		<cfloop query="locations">
        
         <cfset rating = mainGW.getLocationRating(locations.location_id)>
@@ -364,6 +368,16 @@
         <cfset totals.totalglbroker = val(totals.totalglbroker) + val(rating.brokerfee)>
         <cfset totals.totalglinspection = val(totals.totalglinspection) + val(rating.inspectionfee)>
         <cfset totals.totalglsurplus = val(totals.totalglsurplus) + val(rating.surplustax)>
+        <!---custom taxes--->
+        <cfloop from="1" to="5" index="i">
+        	<cfset thislabel = evaluate("rating.custom_tax_#i#_label")>
+          <cfset thisamount = evaluate("rating.custom_tax_#i#")>
+          <cfset totalcustomtax = evaluate("totals.totalcustomtax_#i#")>
+          <cfif trim(thislabel) neq ''>
+        		<cfset "totals.totalcustomtax_#i#" = val(totalcustomtax) + val(thisamount)>
+           
+          </cfif>
+        </cfloop>
         <cfset totals.totalglstamping = val(totals.totalglstamping) + val(rating.stampingfee)>
         <cfset totals.totalglfiling = val(totals.totalglfiling) + val(rating.filingfee)>
         <cfset totals.totalglstate = val(totals.totalglstate) + val(rating.statecharge)>
@@ -1280,7 +1294,23 @@
         <cfparam name="rc.broker_policy_fee" default="0">
         <cfparam name="rc.inspection_fee" default="0">
         <cfparam name="rc.rpg_fee" default="0">
-        <cfparam name="rc.terrorism_fee" default="0">
+        <cfparam name="rc.custom_tax_1_label" default="">
+        <cfparam name="rc.custom_tax_1" default="0">
+        <cfparam name="rc.custom_tax_1_type" default="%">
+        <cfparam name="rc.custom_tax_2_label" default="">
+        <cfparam name="rc.custom_tax_2" default="0">
+        <cfparam name="rc.custom_tax_2_type" default="%">
+        <cfparam name="rc.custom_tax_3_label" default="">
+        <cfparam name="rc.custom_tax_3" default="0">
+        <cfparam name="rc.custom_tax_3_type" default="%">
+        <cfparam name="rc.custom_tax_4_label" default="">
+        <cfparam name="rc.custom_tax_4" default="0">
+        <cfparam name="rc.custom_tax_4_type" default="%">
+        <cfparam name="rc.custom_tax_5_label" default="">
+        <cfparam name="rc.custom_tax_5" default="0">
+        <cfparam name="rc.custom_tax_5_type" default="%">
+        <!---terrorism fee is now defined at plan level, but leaving this in in case they change their mind
+        <cfparam name="rc.terrorism_fee" default="0">--->
 		<cfparam name="rc.calculation" default="">
         <cfparam name="rc.notes" default="">
         <cfparam name="rc.prop_tax" default="0">
@@ -1294,13 +1324,29 @@
 										 rc.broker_policy_fee,
 										 ReReplace(rc.inspection_fee, "[^\d.]", "","ALL"),
 										 ReReplace(rc.rpg_fee, "[^\d.]", "","ALL"),
-										 rc.terrorism_fee,
+										 rc.custom_tax_1_label,
+										 ReReplace(rc.custom_tax_1, "[^\d.]", "","ALL"),
+										 rc.custom_tax_1_type,
+										 rc.custom_tax_2_label,
+										 ReReplace(rc.custom_tax_2, "[^\d.]", "","ALL"),
+										 rc.custom_tax_2_type,
+										 rc.custom_tax_3_label,
+										 ReReplace(rc.custom_tax_3, "[^\d.]", "","ALL"),
+										 rc.custom_tax_3_type,
+										 rc.custom_tax_4_label,
+										 ReReplace(rc.custom_tax_4, "[^\d.]", "","ALL"),
+										 rc.custom_tax_4_type,
+										 rc.custom_tax_5_label,
+										 ReReplace(rc.custom_tax_5, "[^\d.]", "","ALL"),
+										 rc.custom_tax_1_type,
+										 <!---rc.terrorism_fee,--->
 										 rc.calculation,
 										 rc.notes,
 										 rc.prop_tax,
 										 <!---ReReplace(rc.prop_fees, "[^\d.]", "","ALL"),--->
 										 rc.prop_notes,
 										 ReReplace(rc.prop_min_premium, "[^\d.]", "","ALL")) />
+        
 		<cfset rc.response = JSON.encode(result) />
 		<cfset fw.setView('common.ajax') />	
 	</cffunction>  
@@ -2050,6 +2096,7 @@
             <cfset var leased_space_base = rc.leased_space_base>
             <cfset var employeebenefits_base = rc.employeebenefits_base>
             <cfset var terrorism_minimum = rc.terrorism_minimum>
+            <cfset var terrorism_fee = rc.terrorism_fee>
             <cfset var csl_each = rc.csl_each>
             <cfset var csl_aggregate = rc.csl_aggregate>
             <cfset var csl_products = rc.csl_products>
@@ -2103,6 +2150,7 @@
 						leased_space_base=ReReplace(leased_space_base, "[^\d.]", "","ALL"),
 						employeebenefits_base=ReReplace(employeebenefits_base, "[^\d.]", "","ALL"),
 						terrorism_minimum=ReReplace(terrorism_minimum, "[^\d.]", "","ALL"),
+						terrorism_fee=ReReplace(terrorism_fee, "[^\d.]", "","ALL"),
 						csl_each=csl_each,
 						csl_aggregate=csl_aggregate,
 						csl_products=csl_products,
@@ -2208,10 +2256,10 @@
 	</cffunction> 
 	<cffunction name="addEditRatings" access="public" output="true">
 		<cfargument name="rc" type="any">
-    
+    	
 		<cfset var result = StructNew() />
     <!---list of fields to NOT strip out special characters--->
-		<cfset exlist = "gldate1,gldate2,gldate3,gldate4,underwriting_notes,yesnoquestions,propdate1,propdate2,prop_underwritingnotes,prop_yesnoquestionsnew_creditname,new_debitname,default_credit_label,premium_mod_label,liability_propnotes,property_propnotes,historynotes,prop_winddeductable,prop_coinsurancelabel">
+		<cfset exlist = "gldate1,gldate2,gldate3,gldate4,underwriting_notes,yesnoquestions,propdate1,propdate2,prop_underwritingnotes,prop_yesnoquestionsnew_creditname,new_debitname,default_credit_label,premium_mod_label,liability_propnotes,property_propnotes,historynotes,prop_winddeductable,prop_coinsurancelabel,custom_tax_1_label,custom_tax_2_label,custom_tax_3_label,custom_tax_4_label,custom_tax_5_label">
     <!---loop through and strip out non numeric characters, be sure to add any text fields to exlist above--->
 		<cfloop collection="#rc#" item="key">
 
@@ -2225,7 +2273,7 @@
 			</cfif>
       
 		</cfloop>
-	
+
 		
 		<cfparam name="rc.ratingid" default="0">
 		<cfparam name="rc.location_id" default="0">
@@ -2395,6 +2443,7 @@
     <cfparam name="rc.rpg_override" default="0">
     <cfparam name="rc.base_override" default="0">
     <cfparam name="rc.statemuni_override" default="0">
+    <cfparam name="rc.stamping_override" default="0">	
     <cfparam name="rc.filing_override" default="0">	
     <cfparam name="rc.prop_subtotal" default="0">	
     <cfparam name="rc.property_propnotes" default="">	
@@ -3298,6 +3347,7 @@
         <cfparam name="rc.rpg_override" default="0">
         <cfparam name="rc.base_override" default="0">
         <cfparam name="rc.statemuni_override" default="0">
+        <cfparam name="rc.stamping_override" default="0">	
         <cfparam name="rc.filing_override" default="0">
         <cfparam name="rc.prop_subtotal" default="0">	
 			
@@ -3421,44 +3471,70 @@
     </cfloop>
 
   </cffunction>    
-	<cffunction name="test" access="public" output="yes">
+	<cffunction name="specialreport" access="public" output="yes">
 		<cfargument name="rc" type="any">  
-<cfset fieldlist = "other2_loc, 
-    other2_effectivedate, 
-    other2_expiredate, 
-    other2_issuing_company, 
-    other2_dedret, 
-    other2_dedretamount, 
-    other2_premium, 
-    other2_brokerfee, 
-    other2_agencyfee, 
-    other2_tax, 
-    other2_filingfee, 
-    other2_rpgfee, 
-    other2_totalpremium, 
-    other2_proposalnotes, 
-    other2_notes, 
-    other3_loc, 
-    other3_effectivedate, 
-    other3_expiredate, 
-    other3_issuing_company, 
-    other3_dedret, 
-    other3_dedretamount, 
-    other3_premium, 
-    other3_brokerfee, 
-    other3_agencyfee, 
-    other3_tax, 
-    other3_filingfee, 
-    other3_rpgfee, 
-    other3_totalpremium, 
-    other3_proposalnotes, 
-    other3_notes,            
-    label_needed">
-		<cfloop from="1" to="#listlen(fieldlist)#" index="i">
-    #listgetat(fieldlist,i)# money null,<br>
-    </cfloop>
+<cfset data = mainGW.specialReport()>
+<cfset state = "">
+<cfset totalloc = 0>
+<cfset totalgl = 0>
+<cfset grandtotalloc = 0>
+<cfset grandtotalgl = 0>
+<table border="1" style="margin-top:100px;">
+<tr><td>State</td><td>Total Active Locations</td><td>Total GL Premiums</td></tr>
+<cfloop query="data">
+<cfif data.statename neq state>
+<tr><td>#state#</td><td>#totalloc#</td><td>#totalgl#</td><tr>
+<cfset state = data.statename>
+<cfset totalloc = 1>
+<cfset totalgl = data.pro_rata_gl>
+<cfelse>
+<cfset totalloc = totalloc + 1>
+<cfset totalgl = totalgl + val(data.pro_rata_gl)>
+</cfif>
+<cfset grandtotalloc = grandtotalloc +1>
+<cfset grandtotalgl = grandtotalgl + val(data.pro_rata_gl)>
 
+<cfif data.currentrow eq data.recordcount>
+<tr><td>#state#</td><td>#totalloc#</td><td>#totalgl#</td><tr>
+</cfif>
+</cfloop>
+<tr><td>Grand Totals</td><td>#grandtotalloc#</td><td>#grandtotalgl#</td></tr>
+</table>
+<cfset fw.setView('main.test') />	 
+  </cffunction>   
+	<cffunction name="wcreport" access="public" output="yes">
+		<cfargument name="rc" type="any">  
+<cfset data = mainGW.wcReport()>
 
+<cfset state = "">
+
+<cfset totalwc = 0>
+<cfset grandtotalwc = 0>
+<table border="1" style="margin-top:100px;">
+<tr><td>State</td><td>Total WC Premiums</td></tr>
+<cfloop query="data">
+<cfset hasActiveLocs = mainGW.checkactiveLocs(data.client_id)>
+<cfif hasActiveLocs eq true>
+<cfif data.statename neq state>
+<tr><td>#state#</td><td>#totalwc#</td><tr>
+<cfset state = data.statename>
+<cfset totalwc = data.wc_premium>
+<cfelse>
+<cfset totalwc = totalwc + val(data.wc_premium)>
+</cfif>
+<cfset grandtotalwc = grandtotalwc + val(data.wc_premium)>
+
+<cfif data.currentrow eq data.recordcount>
+<tr><td>#state#</td><td>#totalwc#</td></tr>
+</cfif>
+</cfif>
+</cfloop>
+<tr><td>Grand Totals</td><td>#grandtotalwc#</td></tr>
+</table>
+<cfset fw.setView('main.test') />	 
   </cffunction>    
-
+<cffunction name="test" access="public" output="yes">
+<cfset terrorism_premium = mainGW.getTerrorismPrem(50,0)>
+<cfdump var="#terrorism_premium#">
+</cffunction>
 </cfcomponent>

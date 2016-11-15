@@ -1105,3 +1105,12 @@ background:#efefef !important;
 .contactorderlabel {
 	text-align:right;
 }
+.customtax {
+
+}
+.showme {
+	display:block;
+}
+.hideme {
+	display:none;
+}

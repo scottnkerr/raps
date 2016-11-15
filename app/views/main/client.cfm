@@ -1157,7 +1157,7 @@
          <li><label>Deductible</label></li>
          <li><input type="radio" name="other_dedret" value="Retention"<cfif other_dedret is 'Retention'> checked="checked"</cfif> /></li>
          <li><label style="width:53px;">Retention</label></li>
-         <li><input type="text" name="other_dedretamount" id="other_dedretamount" class="width-80 dollarmask" value="<cfoutput>#dollarFormat(other_dedretamount)#</cfoutput>" /></li>
+         <li><input type="text" name="other_dedretamount" id="other_dedretamount" class="width-80 dollarmaskdec" value="<cfoutput>#dollarFormat(other_dedretamount)#</cfoutput>" /></li>
          <li class="clear"><label>&nbsp;</label></li>
          <li class="clear"><label class="txtleft" style="visibility:hidden">Coverage</label></li>
          <li><label class="width-190">Description</label></li>
@@ -1168,20 +1168,20 @@
 <ul class="formfields" style="width:260px;">
 <li><label class="bold">Premium Summary</label></li>
          <li class="clear"><label class="width-120">Premium</label></li>     
-         <li><input type="text" name="other_premium" id="other_premium" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_premium)#</cfoutput>" /></li> 
+         <li><input type="text" name="other_premium" id="other_premium" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_premium)#</cfoutput>" /></li> 
          
          <li class="clear"><label class="width-120">Broker Fee</label></li>     
-         <li><input type="text" name="other_brokerfee" id="other_brokerfee" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_brokerfee)#</cfoutput>" /></li>  
+         <li><input type="text" name="other_brokerfee" id="other_brokerfee" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_brokerfee)#</cfoutput>" /></li>  
          <li class="clear"><label class="width-120">Agency Fee</label></li>     
-         <li><input type="text" name="other_agencyfee" id="other_agencyfee" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_agencyfee)#</cfoutput>" /></li>                         
+         <li><input type="text" name="other_agencyfee" id="other_agencyfee" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_agencyfee)#</cfoutput>" /></li>                         
          <li class="clear"><label class="width-120">Tax/Surcharge</label></li>     
-         <li><input type="text" name="other_tax" id="other_tax" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_tax)#</cfoutput>" /></li>
+         <li><input type="text" name="other_tax" id="other_tax" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_tax)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">Filing Fee</label></li>     
-         <li><input type="text" name="other_filingfee" id="other_filingfee" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_filingfee)#</cfoutput>" /></li>
+         <li><input type="text" name="other_filingfee" id="other_filingfee" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_filingfee)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">RPG Fee</label></li>     
-         <li><input type="text" name="other_rpgfee" id="other_rpgfee" class="width-80 dollarmask otherprem" value="<cfoutput>#dollarFormat(other_rpgfee)#</cfoutput>" /></li>         
+         <li><input type="text" name="other_rpgfee" id="other_rpgfee" class="width-80 dollarmaskdec otherprem" value="<cfoutput>#dollarFormat(other_rpgfee)#</cfoutput>" /></li>         
          <li class="clear"><label class="bold width-120">Total Premium</label></li>     
-         <li><input type="text" name="other_totalpremium" id="other_totalpremium" class="width-80 dollarmask readonly" value="<cfoutput>#dollarFormat(other_totalpremium)#</cfoutput>" /></li>           
+         <li><input type="text" name="other_totalpremium" id="other_totalpremium" class="width-80 dollarmaskdec readonly" value="<cfoutput>#dollarFormat(other_totalpremium)#</cfoutput>" /></li>           
 </ul> 
 <ul class="formfields">
 <li class="clear"><label>&nbsp;</label></li>
@@ -1250,7 +1250,7 @@
          <li><label>Deductible</label></li>
          <li><input type="radio" name="other2_dedret" value="Retention"<cfif other2_dedret is 'Retention'> checked="checked"</cfif> /></li>
          <li><label style="width:53px;">Retention</label></li>
-         <li><input type="text" name="other2_dedretamount" id="other2_dedretamount" class="width-80 dollarmask" value="<cfoutput>#dollarFormat(other2_dedretamount)#</cfoutput>" /></li>
+         <li><input type="text" name="other2_dedretamount" id="other2_dedretamount" class="width-80 dollarmaskdec" value="<cfoutput>#dollarFormat(other2_dedretamount)#</cfoutput>" /></li>
          <li class="clear"><label>&nbsp;</label></li>
          <li class="clear"><label class="txtleft" style="visibility:hidden">Coverage</label></li>
          <li><label class="width-190">Description</label></li>
@@ -1261,20 +1261,20 @@
 <ul class="formfields" style="width:260px;">
 <li><label class="bold">Premium Summary</label></li>
          <li class="clear"><label class="width-120">Premium</label></li>     
-         <li><input type="text" name="other2_premium" id="other2_premium" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_premium)#</cfoutput>" /></li> 
+         <li><input type="text" name="other2_premium" id="other2_premium" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_premium)#</cfoutput>" /></li> 
          
          <li class="clear"><label class="width-120">Broker Fee</label></li>     
-         <li><input type="text" name="other2_brokerfee" id="other2_brokerfee" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_brokerfee)#</cfoutput>" /></li>  
+         <li><input type="text" name="other2_brokerfee" id="other2_brokerfee" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_brokerfee)#</cfoutput>" /></li>  
          <li class="clear"><label class="width-120">Agency Fee</label></li>     
-         <li><input type="text" name="other2_agencyfee" id="other2_agencyfee" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_agencyfee)#</cfoutput>" /></li>                         
+         <li><input type="text" name="other2_agencyfee" id="other2_agencyfee" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_agencyfee)#</cfoutput>" /></li>                         
          <li class="clear"><label class="width-120">Tax/Surcharge</label></li>     
-         <li><input type="text" name="other2_tax" id="other2_tax" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_tax)#</cfoutput>" /></li>
+         <li><input type="text" name="other2_tax" id="other2_tax" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_tax)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">Filing Fee</label></li>     
-         <li><input type="text" name="other2_filingfee" id="other2_filingfee" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_filingfee)#</cfoutput>" /></li>
+         <li><input type="text" name="other2_filingfee" id="other2_filingfee" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_filingfee)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">RPG Fee</label></li>     
-         <li><input type="text" name="other2_rpgfee" id="other2_rpgfee" class="width-80 dollarmask other2prem" value="<cfoutput>#dollarFormat(other2_rpgfee)#</cfoutput>" /></li>         
+         <li><input type="text" name="other2_rpgfee" id="other2_rpgfee" class="width-80 dollarmaskdec other2prem" value="<cfoutput>#dollarFormat(other2_rpgfee)#</cfoutput>" /></li>         
          <li class="clear"><label class="bold width-120">Total Premium</label></li>     
-         <li><input type="text" name="other2_totalpremium" id="other2_totalpremium" class="width-80 dollarmask readonly" value="<cfoutput>#dollarFormat(other2_totalpremium)#</cfoutput>" /></li>           
+         <li><input type="text" name="other2_totalpremium" id="other2_totalpremium" class="width-80 dollarmaskdec readonly" value="<cfoutput>#dollarFormat(other2_totalpremium)#</cfoutput>" /></li>           
 </ul> 
 <ul class="formfields">
 <li class="clear"><label>&nbsp;</label></li>
@@ -1343,7 +1343,7 @@
          <li><label>Deductible</label></li>
          <li><input type="radio" name="other3_dedret" value="Retention"<cfif other3_dedret is 'Retention'> checked="checked"</cfif> /></li>
          <li><label style="width:53px;">Retention</label></li>
-         <li><input type="text" name="other3_dedretamount" id="other3_dedretamount" class="width-80 dollarmask" value="<cfoutput>#dollarFormat(other3_dedretamount)#</cfoutput>" /></li>
+         <li><input type="text" name="other3_dedretamount" id="other3_dedretamount" class="width-80 dollarmaskdec" value="<cfoutput>#dollarFormat(other3_dedretamount)#</cfoutput>" /></li>
          <li class="clear"><label>&nbsp;</label></li>
          <li class="clear"><label class="txtleft" style="visibility:hidden">Coverage</label></li>
          <li><label class="width-190">Description</label></li>
@@ -1354,20 +1354,20 @@
 <ul class="formfields" style="width:260px;">
 <li><label class="bold">Premium Summary</label></li>
          <li class="clear"><label class="width-120">Premium</label></li>     
-         <li><input type="text" name="other3_premium" id="other3_premium" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_premium)#</cfoutput>" /></li> 
+         <li><input type="text" name="other3_premium" id="other3_premium" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_premium)#</cfoutput>" /></li> 
          
          <li class="clear"><label class="width-120">Broker Fee</label></li>     
-         <li><input type="text" name="other3_brokerfee" id="other3_brokerfee" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_brokerfee)#</cfoutput>" /></li>  
+         <li><input type="text" name="other3_brokerfee" id="other3_brokerfee" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_brokerfee)#</cfoutput>" /></li>  
          <li class="clear"><label class="width-120">Agency Fee</label></li>     
-         <li><input type="text" name="other3_agencyfee" id="other3_agencyfee" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_agencyfee)#</cfoutput>" /></li>                         
+         <li><input type="text" name="other3_agencyfee" id="other3_agencyfee" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_agencyfee)#</cfoutput>" /></li>                         
          <li class="clear"><label class="width-120">Tax/Surcharge</label></li>     
-         <li><input type="text" name="other3_tax" id="other3_tax" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_tax)#</cfoutput>" /></li>
+         <li><input type="text" name="other3_tax" id="other3_tax" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_tax)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">Filing Fee</label></li>     
-         <li><input type="text" name="other3_filingfee" id="other3_filingfee" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_filingfee)#</cfoutput>" /></li>
+         <li><input type="text" name="other3_filingfee" id="other3_filingfee" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_filingfee)#</cfoutput>" /></li>
          <li class="clear"><label class="width-120">RPG Fee</label></li>     
-         <li><input type="text" name="other3_rpgfee" id="other3_rpgfee" class="width-80 dollarmask other3prem" value="<cfoutput>#dollarFormat(other3_rpgfee)#</cfoutput>" /></li>         
+         <li><input type="text" name="other3_rpgfee" id="other3_rpgfee" class="width-80 dollarmaskdec other3prem" value="<cfoutput>#dollarFormat(other3_rpgfee)#</cfoutput>" /></li>         
          <li class="clear"><label class="bold width-120">Total Premium</label></li>     
-         <li><input type="text" name="other3_totalpremium" id="other3_totalpremium" class="width-80 dollarmask readonly" value="<cfoutput>#dollarFormat(other3_totalpremium)#</cfoutput>" /></li>           
+         <li><input type="text" name="other3_totalpremium" id="other3_totalpremium" class="width-80 dollarmaskdec readonly" value="<cfoutput>#dollarFormat(other3_totalpremium)#</cfoutput>" /></li>           
 </ul> 
 <ul class="formfields">
 <li class="clear"><label>&nbsp;</label></li>

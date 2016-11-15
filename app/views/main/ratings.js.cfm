@@ -792,10 +792,11 @@ function doGLRating() {
 	surplustaxoverride = $("#surplustax_override").attr('checked');
 	inspectionoverride = $("#inspection_override").attr('checked');
 	filingoverride = $("#filing_override").attr('checked');
+	stampingoverride = $("#stamping_override").attr('checked');
 	statemunioverride = $("#statemuni_override").attr('checked');
 	rpgoverride = $("#rpg_override").attr('checked');
 	
-	
+
 	//check to see if broker fee is overridden
 	if (brokeroverride != 'checked') {
 		//it's not, so reset the percent field and carry on
@@ -832,19 +833,21 @@ function doGLRating() {
 		if (calculation == 'tax_premium_fees') {
 		surplustax = premiumandfees * surplusrate;
 		stampingfee = premiumandfees * stampingrate;
-		$("#stampingfee").autoNumericSet(stampingfee);
 		}
 		else if (calculation == 'tax_premium_only'){
 		surplustax = finalpremium * surplusrate;
 		stampingfee = finalpremium * stampingrate;
-		$("#stampingfee").autoNumericSet(stampingfee);
 		
 		}
 		else { //calculation is tax_premium_broker_fee_only
 		surplustax = premiumandbrokerfee * surplusrate;
 		stampingfee = premiumandbrokerfee * stampingrate;
-		$("#stampingfee").autoNumericSet(stampingfee);
 		}
+		$("#stampingfee").attr("originalval", stampingfee);	
+	//stamping override 
+		if (stampingoverride != 'checked') {
+			$("#stampingfee").autoNumericSet(stampingfee);
+		}		
 		if (surplustaxoverride == 'checked') {
 			surplustax = $('#surplustax').autoNumericGet();
 		}		
@@ -853,7 +856,23 @@ function doGLRating() {
 		thisval = parseFloat($(this).autoNumericGet());
 		taxtotal = taxtotal + thisval;
 	}); //end taxes each		
-
+	//custom taxes
+	
+	$( ".custom_tax_amount:visible" ).each(function() {	
+		//thisval = parseFloat($(this).autoNumericGet());
+		thisrate = parseFloat($(this).next().val());
+		thistype = $(this).next().next().val();
+		if (thistype == '%') {
+			//do we need to account for the tax settings (premium plus fees, broker fee, etc?
+			var customamount = (thisrate / 100)  * finalpremium;
+		}
+		else {
+			var customamount = thisrate;
+		}
+		$(this).autoNumericSet(customamount);
+		taxtotal = taxtotal + customamount;
+	});
+	
 	grandtotal = premium + feetotal + taxtotal + brokerfee + addterrorism;
 	$('.grandtotal').autoNumericSet(grandtotal);
 
@@ -863,7 +882,7 @@ function doGLRating() {
 	
 
 
-}
+} //end doGLRating
 createHistoryGrid = function() {
 	var url = '/index.cfm?event=main.getRatingHistory&location_id=<cfoutput>#location_id#</cfoutput>';
 	var getAll = $("#historyall").is(':checked');
@@ -977,6 +996,7 @@ function getStateTaxes() {
 			var surplustaxoverride = $("#surplustax_override").attr('checked');
 			var inspectionoverride = $("#inspection_override").attr('checked');
 			var filingoverride = $("#filing_override").attr('checked');
+			var stampingoverride = $("#stamping_override").attr('checked');
 			var statemunioverride = $("#statemuni_override").attr('checked');
 			var rpgoverride = $("#rpg_override").attr('checked'); 	
 			
@@ -1011,14 +1031,62 @@ function getStateTaxes() {
 			$("#rpgfee").autoNumericSet(rpgfee);
 			}
 			calculation = v.calculation;
-			terrorismrate = v.terrorism_fee / 100;
+//			terrorismrate = v.terrorism_fee / 100;
 			proptaxrate = v.prop_tax / 100;
 			prop_min_premium = v.prop_min_premium;
 			state_id = v.state_id;
+			//custom taxes
+			//first hide any that are showing and blank values
+			$('.customtax').hide();
+			$('.customtax input').val('');
+			custom_tax_1_label = v.custom_tax_1_label;
+			custom_tax_1 = v.custom_tax_1;
+			custom_tax_1_type = v.custom_tax_1_type;
+			custom_tax_2_label = v.custom_tax_2_label;
+			custom_tax_2 = v.custom_tax_2;
+			custom_tax_2_type = v.custom_tax_2_type;
+			custom_tax_3_label = v.custom_tax_3_label;
+			custom_tax_3 = v.custom_tax_3;
+			custom_tax_3_type = v.custom_tax_3_type;
+			custom_tax_4_label = v.custom_tax_4_label;
+			custom_tax_4 = v.custom_tax_4;
+			custom_tax_4_type = v.custom_tax_4_type;
+			custom_tax_5_label = v.custom_tax_5_label;
+			custom_tax_5 = v.custom_tax_5;
+			custom_tax_5_type = v.custom_tax_5_type;
+			if (custom_tax_1_label !== '') {
+				showHideCustomTax('.custom_tax_1_container',custom_tax_1_label,custom_tax_1,custom_tax_1_type);
+			}
+			if (custom_tax_2_label !== '') {
+				showHideCustomTax('.custom_tax_2_container',custom_tax_2_label,custom_tax_2,custom_tax_2_type);
+			}
+			if (custom_tax_3_label !== '') {
+			showHideCustomTax('.custom_tax_3_container',custom_tax_3_label,custom_tax_3,custom_tax_3_type);
+			}
+			
+			if (custom_tax_4_label !== '') {
+				showHideCustomTax('.custom_tax_4_container',custom_tax_4_label,custom_tax_4,custom_tax_4_type);
+			}
+			if (custom_tax_5_label !== '') {
+				showHideCustomTax('.custom_tax_5_container',custom_tax_5_label,custom_tax_5,custom_tax_5_type);
+			}												
 		});
 		
 					
 	});	
+}
+function showHideCustomTax(container, tlabel, tamount, ttype) {
+				if (ttype == '%') {
+					var thislabel = tlabel + ' ' + tamount + ttype;
+				}
+				else {
+					var thislabel = tlabel + ' ' + ttype + tamount;
+				}
+				$(container).show();
+				$(container + ' .customtaxlabel').text(thislabel);
+				$(container + ' .custom_tax_rate').val(tamount);
+				$(container + ' .custom_tax_label').val(tlabel);
+				$(container + ' .custom_tax_type').val(ttype);
 }
 function getPropStateTaxes() {
 	
@@ -1114,6 +1182,8 @@ function getLiabilityPlan(doRatingAfter) {
 				$('#default_credit').autoNumericSet(v.default_credit);
 				
 	    		$('#terrorism_minimum').val(v.terrorism_minimum);
+					//terrorism_fee from gl plan
+					terrorismrate = v.terrorism_fee / 100;
 					
 		if (doRatingAfter) { 
 		getStateTaxes();

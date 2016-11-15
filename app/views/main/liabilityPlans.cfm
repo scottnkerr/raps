@@ -201,7 +201,10 @@ $('#select_plan').change(function() {
 				}				
 				if (v.terrorism_minimum != undefined) {
 				$('#terrorism_minimum').autoNumericSet(v.terrorism_minimum);
-				}				
+				}		
+				if (v.terrorism_fee != undefined) {
+				$('#terrorism_fee').autoNumericSet(v.terrorism_fee);
+				}							
 				if (v.csl_each != undefined) {
 				$('#csl_each').val(v.csl_each);
 				}
@@ -354,6 +357,8 @@ resetStuff = function(fullreset) {
 <li><input type="text" name="leased_space_base" id="leased_space_base" class="width-80 dollarmask"></li>
 <li class="clear"><label class="width-134 proper">employee benefits base</label></li>
 <li><input type="text" name="employeebenefits_base" id="employeebenefits_base" class="width-80 dollarmask"></li>
+<li class="clear"><label class="width-134 proper">Terrorism Fee</label></li>
+<li><input type="text" name="terrorism_fee" id="terrorism_fee" class="width-80 percentdecmask"></li>
 <li class="clear"><label class="width-134 proper">Terrorism Minimum</label></li>
 <li><input type="text" name="terrorism_minimum" id="terrorism_minimum" class="width-80 dollarmask"></li>
     </ul>

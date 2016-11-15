@@ -1393,6 +1393,7 @@ where #qKey# = #newid#
   <cfset arrayAppend(insertArray,cols[i])>
   </cfif>
   </cfloop>
+
   
 	<!---INSERT QUERY--->
 	<cfif arguments.id is 0>

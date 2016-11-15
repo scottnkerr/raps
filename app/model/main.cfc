@@ -222,6 +222,7 @@
         <cfargument name="leased_space_base" required="yes">
         <cfargument name="employeebenefits_base" required="yes">
         <cfargument name="terrorism_minimum" required="yes">
+        <cfargument name="terrorism_fee" required="yes">
         <cfargument name="csl_each" required="yes">
         <cfargument name="csl_aggregate" required="yes">
         <cfargument name="csl_products" required="yes">
@@ -268,6 +269,7 @@
                         leased_space_base,
                         employeebenefits_base,
                         terrorism_minimum,
+                        terrorism_fee,
                         csl_each,
                         csl_aggregate,
                         csl_products,
@@ -309,6 +311,7 @@
                         <cfqueryparam cfsqltype="cf_sql_money" value="#val(ARGUMENTS.leased_space_base)#">,
                         <cfqueryparam cfsqltype="cf_sql_money" value="#val(ARGUMENTS.employeebenefits_base)#">,
                         <cfqueryparam cfsqltype="cf_sql_money" value="#val(ARGUMENTS.terrorism_minimum)#">,
+                        <cfqueryparam cfsqltype="cf_sql_money" value="#val(ARGUMENTS.terrorism_fee)#">,
                         <cfqueryparam cfsqltype="cf_sql_varchar" value="#val(ARGUMENTS.csl_each)#">,
                         <cfqueryparam cfsqltype="cf_sql_varchar" value="#val(ARGUMENTS.csl_aggregate)#">,
                         <cfqueryparam cfsqltype="cf_sql_varchar" value="#val(ARGUMENTS.csl_products)#">,
@@ -366,6 +369,7 @@
                         leased_space_base = #val(arguments.leased_space_base)#,
                         employeebenefits_base = #val(arguments.employeebenefits_base)#,
                         terrorism_minimum = #val(ARGUMENTS.terrorism_minimum)#,
+                        terrorism_fee = #val(ARGUMENTS.terrorism_fee)#,
                         csl_each = '#ARGUMENTS.csl_each#',
                         csl_aggregate = '#ARGUMENTS.csl_aggregate#',
                         csl_products = '#ARGUMENTS.csl_products#',
@@ -899,6 +903,53 @@
 		</cfquery>
 		<cfreturn getloc />
 	</cffunction>
+  
+<cffunction name="specialReport" output="false" returntype="query">
+
+<cfquery name="data">
+select rl.pro_rata_gl, l.location_id, s.name as statename, isnull((select top 1 application_id from applications where (history = 0 or history is null) and location_id = l.location_id),0) as application_id, isnull((select TOP 1 ratingid from rating where (history = 0 or history is null) and location_id = l.location_id),0) as myratingid
+from locations l 
+inner join clients c on c.client_id = l.client_id
+inner join rating r on r.ratingid = isnull((select TOP 1 ratingid from rating where (history = 0 or history is null) and location_id = l.location_id),0)
+inner join rating_liability rl on rl.ratingid = r.ratingid
+left join states s on l.state_id = s.state_id
+where c.client_status_id = 2
+and l.location_status_id = 1		
+and rl.gldate2 > '2016-05-30'	
+order by s.state_id
+</cfquery>
+<cfreturn data />
+</cffunction>
+<cffunction name="wcReport" output="false" returntype="query">
+
+<cfquery name="data">
+select c.wc_premium, c.client_id, s.name as statename
+from clients c 
+left join states s on c.mailing_state = s.state_id
+where c.client_status_id = 2
+and c.current_effective_date > '2015-08-15'	
+order by s.state_id
+</cfquery>
+<cfreturn data />
+</cffunction>
+<cffunction name="checkactiveLocs" output="yes" returntype="boolean">
+<cfargument name="client_id" required="yes" type="numeric">
+<cfquery name="data">
+SELECT location_id
+from locations
+where location_status_id = 1  
+and client_id = #arguments.client_id#
+</cfquery>
+
+<cfif data.recordcount gt 0>
+<cfset response = true>
+<cfelse>
+<cfset response = false>
+</cfif>
+<cfreturn response />
+</cffunction>
+
+
   <cffunction name="updatesavetime" output="false">
   <cfargument name="client_id" required="yes">
   <cfargument name="savetime" required="yes">
@@ -932,16 +983,19 @@
 		</cfquery>
 		<cfreturn getloc />
 	</cffunction>  
-	<cffunction name="getTerrorismPrem" output="false" returntype="numeric">
+	<cffunction name="getTerrorismPrem" output="true" returntype="numeric">
 			<cfargument name="client_id" required="true">
     	<cfargument name="onlyquote" required="false" default="0">
 			<cfset locations = getPropLocations(arguments.client_id,arguments.onlyquote)>
       <cfset totalterrorism = 0>
+     
       <cfloop query="locations">
       <cfset rating = getLocationRating(locations.location_id)>
+     
       <cfset thisterrorism = round(val(rating.terrorism_fee))>
       <cfset thistotal = calculateTerrorism(thisterrorism,locations.state_id)>
-      <cfset totalterrorism = thistotal>
+ 
+      <cfset totalterrorism = thistotal + totalterrorism>
       </cfloop>
 		<cfreturn totalterrorism />
 	</cffunction>  
@@ -975,7 +1029,7 @@
       <cfargument name="ue_premium" required="true" default="0">
       
 			<cfset stateinfo = getStates(val(arguments.ue_rate_state))>
-      <cfset terrorism = val(arguments.ue_premium) * (val(stateinfo.terrorism_fee) / 100)>
+      <cfset terrorism = round(val(arguments.ue_premium) * (val(stateinfo.terrorism_fee) / 100))>
       <cfset tax = terrorism * (val(stateinfo.tax_rate) / 100)>
       <cfset stamping = terrorism * (val(stateinfo.stamp_tax) / 100)>
       <cfset totalterrorism = terrorism + tax + stamping>
@@ -2601,7 +2655,22 @@
         <cfargument name="broker_policy_fee" required="true">
         <cfargument name="inspection_fee" required="true">
         <cfargument name="rpg_fee" required="true">
-        <cfargument name="terrorism_fee" required="true">
+        <cfargument name="custom_tax_1_label" required="true">
+        <cfargument name="custom_tax_1" required="true">
+        <cfargument name="custom_tax_1_type" required="true">
+        <cfargument name="custom_tax_2_label" required="true">
+        <cfargument name="custom_tax_2" required="true">
+        <cfargument name="custom_tax_2_type" required="true">
+        <cfargument name="custom_tax_3_label" required="true">
+        <cfargument name="custom_tax_3" required="true">
+        <cfargument name="custom_tax_3_type" required="true">
+        <cfargument name="custom_tax_4_label" required="true">
+        <cfargument name="custom_tax_4" required="true">
+        <cfargument name="custom_tax_4_type" required="true">
+        <cfargument name="custom_tax_5_label" required="true">
+        <cfargument name="custom_tax_5" required="true">
+        <cfargument name="custom_tax_5_type" required="true">
+       <!--- <cfargument name="terrorism_fee" required="true">--->
         <cfargument name="calculation" required="true">
         <cfargument name="notes" required="true">
         <cfargument name="prop_tax" required="true">
@@ -2621,7 +2690,22 @@
              broker_policy_fee = #val(ARGUMENTS.broker_policy_fee)#,
              inspection_fee = #val(ARGUMENTS.inspection_fee)#,
              rpg_fee = #val(ARGUMENTS.rpg_fee)#,
-             terrorism_fee = #val(ARGUMENTS.terrorism_fee)#,
+             custom_tax_1_label = '#ARGUMENTS.custom_tax_1_label#',
+             custom_tax_1 = #val(ARGUMENTS.custom_tax_1)#,
+             custom_tax_1_type = '#ARGUMENTS.custom_tax_1_type#',
+             custom_tax_2_label = '#ARGUMENTS.custom_tax_2_label#',
+             custom_tax_2 = #val(ARGUMENTS.custom_tax_2)#,
+             custom_tax_2_type = '#ARGUMENTS.custom_tax_2_type#',
+             custom_tax_3_label = '#ARGUMENTS.custom_tax_3_label#',
+             custom_tax_3 = #val(ARGUMENTS.custom_tax_3)#,
+             custom_tax_3_type = '#ARGUMENTS.custom_tax_3_type#',
+             custom_tax_4_label = '#ARGUMENTS.custom_tax_4_label#',
+             custom_tax_4 = #val(ARGUMENTS.custom_tax_4)#,
+             custom_tax_4_type = '#ARGUMENTS.custom_tax_4_type#',
+             custom_tax_5_label = '#ARGUMENTS.custom_tax_5_label#',
+             custom_tax_5 = #val(ARGUMENTS.custom_tax_5)#,
+             custom_tax_5_type = '#ARGUMENTS.custom_tax_5_type#',
+             <!---terrorism_fee = #val(ARGUMENTS.terrorism_fee)#,--->
              calculation = '#ARGUMENTS.calculation#',
              notes = '#ARGUMENTS.notes#',
              prop_tax = #val(ARGUMENTS.prop_tax)#,

@@ -1,3 +1,4 @@
+<cfset customtaxfields = 5>
 <script>
 $(document).ready(function() {
 populateSelect();
@@ -40,7 +41,14 @@ $('#state_id').change(function() {
 			$('#broker_policy_fee').autoNumericSet(v.broker_policy_fee);
 			$('#inspection_fee').autoNumericSet(v.inspection_fee);
 			$('#rpg_fee').autoNumericSet(v.rpg_fee);
-			$('#terrorism_fee').autoNumericSet(v.terrorism_fee);
+<cfoutput>
+<cfloop from="1" to="#customtaxfields#" index="i">			
+			$('##custom_tax_#i#_label').val(v.custom_tax_#i#_label);
+			$('##custom_tax_#i#').autoNumericSet(v.custom_tax_#i#);
+			$('##custom_tax_#i#_type').val(v.custom_tax_#i#_type);		
+</cfloop>
+</cfoutput>													
+//			$('#terrorism_fee').autoNumericSet(v.terrorism_fee);
 			$('#notes').val(v.notes);
 			$('#prop_tax').autoNumericSet(v.prop_tax);
 			//$('#prop_fees').autoNumericSet(v.prop_fees);
@@ -171,10 +179,27 @@ $.ajax({
  <li><input type="text" name="inspection_fee" id="inspection_fee" class="width-80 dollarmaskdec" /></li>
    <li class="clear"><label class="width-120">RPG Fee</label></li>
  <li><input type="text" name="rpg_fee" id="rpg_fee" class="width-80 dollarmaskdec" /></li>
+ <li class="clear"><label class="width-120" style="font-weight:bold; margin-top: 15px;">Custom Taxes & Fees</label></li>
+ <li class="clear"><label class="width-80" style="margin-left:12px;">Label</label></li>
+ <li><label class="width-80">Amount</label></li>
+ <li><label>Type</label></li>
+ <cfoutput>
+ <cfloop from="1" to="#customtaxfields#" index="i">
+ <li class="clear"><label>#i#</label></li>
+ <li><input type="text" name="custom_tax_#i#_label" id="custom_tax_#i#_label" class="width-80" /></li>
+ <li><input type="text" name="custom_tax_#i#" id="custom_tax_#i#" class="width-80 numberdecmask" /></li>
+ <li><select name="custom_tax_#i#_type" id="custom_tax_#i#_type">
+ 		<option value="%">%</option>
+    <option value="$">$</option>
+    </select>
+    </li>
+</cfloop>
+</cfoutput>
+ <!---
     <li class="clear"><label class="width-120">Terrorism Fee</label></li>
- <li><input type="text" name="terrorism_fee" id="terrorism_fee" class="width-80 percentdecmask" /></li>
+ <li><input type="text" name="terrorism_fee" id="terrorism_fee" class="width-80 percentdecmask" /></li>--->
 
-
+<li style="clear:both; margin-top:20px;"></li>
  <li class="clear"><input type="radio" name="calculation" id="tax_premium_only" value="tax_premium_only" /></li>
   <li><label>Tax Premium Only</label></li>
   <li class="clear"><input type="radio" name="calculation" id="tax_premium_fees" value="tax_premium_fees" /></li>

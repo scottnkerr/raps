@@ -1,4 +1,4 @@
-
+<cfset customtaxfields = 5>
 <cfparam name="location_id" default="#url.location_id#">
 <cfparam name="gldate1" default="#now()#">
 <cfparam name="propdate1" default="#now()#">
@@ -32,6 +32,7 @@
 <cfparam name="propdate2" default="#yearAhead#">
 
 <cfif structkeyexists(rc,'rform')>
+
 	<cfset viewhistory = val(rc.rform.history)>
 	<cfparam name="rating_liability_id" default="#rc.rform.rating_liability_id#">
 	<cfparam name="rating_property_id" default="#rc.rform.rating_property_id#">
@@ -129,6 +130,21 @@
 	<cfparam name="statecharge" default="#dollarformat(rc.rform.statecharge)#">
 	<cfparam name="rpgfee" default="#dollarformat(rc.rform.rpgfee)#">
 	<cfparam name="rpgall" default="#dollarformat(rc.totalrpg)#">
+  <cfparam name="custom_tax_1" default="#dollarformat(rc.rform.custom_tax_1)#">
+  <cfparam name="custom_tax_1_label" default="#rc.rform.custom_tax_1_label#">
+  <cfparam name="custom_tax_1_type" default="#rc.rform.custom_tax_1_type#">
+    <cfparam name="custom_tax_2" default="#dollarformat(rc.rform.custom_tax_2)#">
+  <cfparam name="custom_tax_2_label" default="#rc.rform.custom_tax_2_label#">
+  <cfparam name="custom_tax_2_type" default="#rc.rform.custom_tax_2_type#">
+    <cfparam name="custom_tax_3" default="#dollarformat(rc.rform.custom_tax_3)#">
+  <cfparam name="custom_tax_3_label" default="#rc.rform.custom_tax_3_label#">
+  <cfparam name="custom_tax_3_type" default="#rc.rform.custom_tax_3_type#">
+    <cfparam name="custom_tax_4" default="#dollarformat(rc.rform.custom_tax_4)#">
+  <cfparam name="custom_tax_4_label" default="#rc.rform.custom_tax_4_label#">
+  <cfparam name="custom_tax_4_type" default="#rc.rform.custom_tax_4_type#">
+    <cfparam name="custom_tax_5" default="#dollarformat(rc.rform.custom_tax_5)#">
+  <cfparam name="custom_tax_5_label" default="#rc.rform.custom_tax_5_label#">
+  <cfparam name="custom_tax_5_type" default="#rc.rform.custom_tax_5_type#">
 	<cfparam name="grandtotal" default="#dollarformat(rc.rform.grandtotal)#">
 	<cfset gldate1 = rc.rform.gldate1>
 	<cfset gldate2 = rc.rform.gldate2>
@@ -216,6 +232,7 @@
     <cfparam name="surplustax_override" default="#val(rc.rform.surplustax_override)#">
     <cfparam name="inspection_override" default="#val(rc.rform.inspection_override)#">
     <cfparam name="rpg_override" default="#val(rc.rform.rpg_override)#">
+    <cfparam name="stamping_override" default="#val(rc.rform.stamping_override)#">
     <cfparam name="filing_override" default="#val(rc.rform.filing_override)#">
     <cfparam name="statemuni_override" default="#val(rc.rform.statemuni_override)#">
     <cfparam name="prop_subtotal" default="#val(rc.rform.prop_subtotal)#">
@@ -316,6 +333,21 @@
 	<cfparam name="statecharge" default="">
 	<cfparam name="rpgfee" default="">
 	<cfparam name="rpgall" default="">
+  <cfparam name="custom_tax_1" default="">
+  <cfparam name="custom_tax_1_label" default="">
+  <cfparam name="custom_tax_1_type" default="">
+    <cfparam name="custom_tax_2" default="">
+  <cfparam name="custom_tax_2_label" default="">
+  <cfparam name="custom_tax_2_type" default="">
+    <cfparam name="custom_tax_3" default="">
+  <cfparam name="custom_tax_3_label" default="">
+  <cfparam name="custom_tax_3_type" default="">
+    <cfparam name="custom_tax_4" default="">
+  <cfparam name="custom_tax_4_label" default="">
+  <cfparam name="custom_tax_4_type" default="">
+    <cfparam name="custom_tax_5" default="">
+  <cfparam name="custom_tax_5_label" default="">
+  <cfparam name="custom_tax_5_type" default="">  
 	<cfparam name="grandtotal" default="">
 	<cfparam name="gldate1" default="">
 	<cfparam name="gldate2" default="">
@@ -396,6 +428,7 @@
     <cfparam name="surplustax_override" default="0">
     <cfparam name="inspection_override" default="0">
     <cfparam name="rpg_override" default="0"> 
+    <cfparam name="stamping_override" default="0">
     <cfparam name="filing_override" default="0"> 
     <cfparam name="statemuni_override" default="0">    
     <cfparam name="prop_subtotal" default="0">
@@ -939,10 +972,16 @@ width:370px !important;
             <label class="bold width-302">Other Taxes/Fees</label>
           </li>
           <li>
-            <label class="width-200">Stamping Fee</label>
+            <label class="width-129">Stamping Fee</label>
           </li>
+          <li class="width-21 csummaryhide">
+            <input type="checkbox" name="stamping_override" value="1" class="plaincheck overridefield" overridefield="stampingfee" id="stamping_override" <cfif stamping_override eq 1>checked</cfif>>
+          </li> 
+          <li class="csummaryhide">
+            <label for="stamping_override" class="overridelabel">Override</label>
+          </li>	          
           <li>
-            <input type="text" name="stampingfee" value="#stampingfee#" id="stampingfee" class="width-80 dollarmaskdec taxes readonly">
+            <input type="text" name="stampingfee" value="#stampingfee#" id="stampingfee" class="width-80 dollarmaskdec taxes <cfif stamping_override neq 1>readonlyLive</cfif>" originalval="#ReReplace(stampingfee, '[^\d.]', '','all')#">
           </li>
           <li>
             <label class="width-129 csummaryspecial">Filing Fee</label>
@@ -968,6 +1007,28 @@ width:370px !important;
           <li>
             <input type="text" name="statecharge" value="#statecharge#" id="statecharge" class="width-80 dollarmaskdec taxes" originalval="#ReReplace(statecharge, '[^\d.]', '','all')#">
           </li>
+          <cfoutput>
+          <cfloop from="1" to="#customtaxfields#" index="i">
+          <cfset thislabel = evaluate("custom_tax_#i#_label")>
+          <cfset thisamount = evaluate("custom_tax_#i#")>
+          <cfset thistype = evaluate("custom_tax_#i#_type")>
+          <cfif trim(thislabel) neq ''>
+          <cfset cssclass = "showme">
+          <cfelse>
+          <cfset cssclass = "hideme">
+          </cfif>
+  
+          <li class="customtax custom_tax_#i#_container #cssclass#"><label class="width-200 customtaxlabel">#thislabel#</label>
+
+          </li>
+          <li class="customtax custom_tax_#i#_container #cssclass#"><input type="text" name="custom_tax_#i#" id="custom_tax_#i#" class="custom_tax_amount width-80 dollarmaskdec" value="#thisamount#">
+          <input type="hidden" name="custom_tax_#i#_rate" id="custom_tax_#i#_rate" class="custom_tax_rate" value=''>
+          <input type="hidden" name="custom_tax_#i#_type" id="custom_tax_#i#_type" class="custom_tax_type" value=''>
+           <input type="hidden" name="custom_tax_#i#_label" id="custom_tax_#i#_label" class="custom_tax_label" value='#thislabel#'>
+                   
+          </li>
+          </cfloop>
+          </cfoutput>          
           <li class="clear">
             <label class="width-129 csummaryspecial">RPG Fee</label>
           </li>
@@ -987,9 +1048,12 @@ width:370px !important;
           <li class="csummaryhide">
             <input type="text" name="rpgall" value="#rpgall#" id="rpgall" class="width-80 dollarmask readonly">
           </li>
-          <li>
+
+          <li class="clear">
             <label class="width-200 bold">GRAND TOTAL</label>
           </li>
+          
+
           <li>
             <input type="text" name="grandtotal" value="#grandtotal#" class="width-80 dollarmaskdec grandtotal readonly">
           </li>
