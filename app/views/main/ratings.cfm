@@ -212,7 +212,8 @@
 	<cfparam name="prop_agencyamount" default="#rc.rform.prop_agencyamount#">
   <cfparam name="prop_brokerfee" default="#rc.rform.prop_brokerfee#">
 	<cfparam name="prop_terrorism_rejected" default="#rc.rform.prop_terrorism_rejected#">
-	<cfparam name="prop_terrorism" default="#rc.rform.prop_terrorism#">
+	<cfparam name="prop_terrorism_override" default="#rc.rform.prop_terrorism_override#">
+  <cfparam name="prop_terrorism" default="#rc.rform.prop_terrorism#">
   <cfparam name="prop_taxoverride" default="#rc.rform.prop_taxoverride#">
 	<cfparam name="prop_taxes" default="#rc.rform.prop_taxes#">
 	<cfparam name="prop_grandtotal" default="#rc.rform.prop_grandtotal#">
@@ -408,6 +409,7 @@
 	<cfparam name="prop_agencyamount" default="0">
   <cfparam name="prop_brokerfee" default="0">
 	<cfparam name="prop_terrorism_rejected" default="0">
+  <cfparam name="prop_terrorism_override" default="0">
 	<cfparam name="prop_terrorism" default="0">
   <cfparam name="prop_taxoverride" default="0">
 	<cfparam name="prop_taxes" default="0">
@@ -528,9 +530,12 @@ width:370px !important;
       <li class="planboxli" style="margin-bottom:0;"><label class="planlabel planlabel2">Property Rating Plan</label></li>
         <li class="planboxli glplanli">
           <select id="liability_plan_id" name="liability_plan_id" class="selectbox2" style="width:250px;" tabindex="1">
+          
             <option value="0">Select Liability Plan</option>
+            <cfif isdefined("rc.glplans")>
 <cfloop query="rc.glplans">
 <cfoutput><option value="#rc.glplans.liability_plan_id#" <cfif rc.glplans.liability_plan_id eq liability_plan_select>selected="selected"</cfif>>#rc.glplans.name#</option></cfoutput></cfloop>
+</cfif>
           </select>
         </li>
         <li class="planboxli propplanli">
@@ -1018,13 +1023,19 @@ width:370px !important;
           <cfset cssclass = "hideme">
           </cfif>
   
-          <li class="customtax custom_tax_#i#_container #cssclass#"><label class="width-200 customtaxlabel">#thislabel#</label>
+          <li class="customtax custom_tax_#i#_container #cssclass#"><input type="text" name="custom_tax_#i#_label" id="custom_tax_#i#_label" class="custom_tax_label txtleft width-129" value='#thislabel#'>
 
           </li>
+          <li class="width-21 customtax custom_tax_#i#_container #cssclass#">
+            <input type="checkbox" name="custom_tax_#i#_override" value="1" class="plaincheck customtaxoverride" overridefield="custom_tax_#i#" id="custom_tax_#i#_override">
+          </li> 
+          <li class="csummaryhide customtax custom_tax_#i#_container #cssclass#">
+            <label for="custom_tax_#i#_override" class="overridelabel">Override</label>
+          </li>	          
           <li class="customtax custom_tax_#i#_container #cssclass#"><input type="text" name="custom_tax_#i#" id="custom_tax_#i#" class="custom_tax_amount width-80 dollarmaskdec" value="#thisamount#">
           <input type="hidden" name="custom_tax_#i#_rate" id="custom_tax_#i#_rate" class="custom_tax_rate" value=''>
           <input type="hidden" name="custom_tax_#i#_type" id="custom_tax_#i#_type" class="custom_tax_type" value=''>
-           <input type="hidden" name="custom_tax_#i#_label" id="custom_tax_#i#_label" class="custom_tax_label" value='#thislabel#'>
+           
                    
           </li>
           </cfloop>
@@ -1294,7 +1305,9 @@ width:370px !important;
             <input type="text" name="prop_equipbreaktotal" value="#dollarformat(prop_equipbreaktotal)#" id="prop_equipbreaktotal" class="width-80 dollarmask">
 
             <input type="text" name="prop_equipbreakpremium" value="#dollarformat(prop_equipbreakpremium)#" id="prop_equipbreakpremium" class="width-80 dollarmask">
-          </li>          
+          </li> 
+          <li class="clear"><input type="checkbox" name="prop_equipbreakoverride" id="prop_equipbreakoverride"></li>
+          <li><label for="prop_equipbreakoverride">Equip Breakdown Override</label></li>         
           <li class="clear">
 </cfoutput>
 <label class="width-142">Employee Dishonesty</label></li>
@@ -1419,10 +1432,15 @@ width:370px !important;
           <li>
               <input type="checkbox" name="prop_terrorism_rejected" value="1" id="prop_terrorism_rejected"  class="propchecks" <cfif prop_terrorism_rejected eq 1>checked</cfif>>
               </li>
-              <li><label class="width-133">Rejected</label>
-          </li>                    
+              <li><label class="width-45" for="prop_terrorism_rejected">Rejected</label>
+          </li>   
           <li>
-            <input type="text" class="width-80 dollarmask readonly" name="prop_terrorism" value="#dollarformat(prop_terrorism)#" id="prop_terrorism">
+              <input type="checkbox" name="prop_terrorism_override" value="1" id="prop_terrorism_override" overridefield="prop_terrorism"  class="propchecks overridefield" <cfif prop_terrorism_override eq 1>checked</cfif>>
+              </li>
+              <li><label class="width-60" for="prop_terrorism_override">Override</label>
+          </li>                             
+          <li>
+            <input type="text" class="width-80 dollarmaskdec readonlyLive" name="prop_terrorism" value="#dollarformat(prop_terrorism)#" id="prop_terrorism" originalval="#prop_terrorism#">
           </li> 
           <li class="clear">
             <label class="width-221">Subtotal</label>

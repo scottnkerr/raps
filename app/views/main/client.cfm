@@ -33,6 +33,10 @@
     <cfparam name="ue_brokerfee"  default="#rc.client.ue_brokerfee#">
     <cfparam name="ue_agencyfee"  default="#rc.client.ue_agencyfee#">
     <cfparam name="ue_filingfee"  default="#rc.client.ue_filingfee#">
+    <cfparam name="ue_custom_1"  default="#rc.client.ue_custom_1#">
+    <cfparam name="ue_custom_1_label"  default="#rc.client.ue_custom_1_label#">
+    <cfparam name="ue_custom_2"  default="#rc.client.ue_custom_2#">
+    <cfparam name="ue_custom_2_label"  default="#rc.client.ue_custom_2_label#">
 	<cfparam name="ue_terrorism_rejected" default="#rc.client.ue_terrorism_rejected#">
 	<cfparam name="ue_terrorism_fee" default="#dollarformat(rc.client.ue_terrorism_fee)#">    
     <cfparam name="ue_stampingfee"  default="#rc.client.ue_stampingfee#">
@@ -42,6 +46,7 @@
     <cfparam name="ue_declinedreason"  default="#rc.client.ue_declinedreason#">
     <cfparam name="ue_proposalnotes"  default="#rc.client.ue_proposalnotes#"> 
     <cfparam name="ue_notes"  default="#rc.client.ue_notes#"> 
+    <cfparam name="liability_plan_select"  default="#rc.client.liability_plan_id#">
     <cfparam name="ue_rate_state"  default="#rc.client.ue_rate_state#">
     <cfparam name="ue_rate_sltax"  default="#rc.client.ue_rate_sltax#">
     <cfparam name="ue_rate_filingfee"  default="#rc.client.ue_rate_filingfee#">
@@ -195,6 +200,10 @@
     <cfparam name="ue_agencyfee"  default="">
     <cfparam name="ue_filingfee"  default="">
     <cfparam name="ue_stampingfee"  default="">
+    <cfparam name="ue_custom_1"  default="0">
+    <cfparam name="ue_custom_1_label"  default="">
+    <cfparam name="ue_custom_2"  default="0">
+    <cfparam name="ue_custom_2_label"  default="">
 	<cfparam name="ue_terrorism_rejected" default="0">
 	<cfparam name="ue_terrorism_fee" default="0">      
     <cfparam name="ue_sltax"  default="">
@@ -203,6 +212,7 @@
     <cfparam name="ue_declinedreason"  default="">
     <cfparam name="ue_proposalnotes"  default="">
     <cfparam name="ue_notes"  default=""> 
+    <cfparam name="liability_plan_select" default="0">
     <cfparam name="ue_rate_state"  default="">
     <cfparam name="ue_rate_sltax"  default="">
     <cfparam name="ue_rate_filingfee"  default="">
@@ -625,13 +635,21 @@
       </ul>
 <ul class="formfields" style="width:295px;">
 <li><label class="bold">Premium Summary</label></li>
+<li class="clear"><label class="width-150">Liability Plan</label></li>  
+        <li class="planboxli glplanli">
+          <select id="liability_plan_id" name="liability_plan_id" class="selectbox2" style="width:270px;" tabindex="1">
+            <option value="">Select Liability Plan</option>
+<cfloop query="rc.glplans">
+<cfoutput><option value="#rc.glplans.liability_plan_id#" <cfif rc.glplans.liability_plan_id eq liability_plan_select OR (liability_plan_select eq 0 AND rc.glplans.liability_plan_id eq 74)>selected="selected"</cfif>>#rc.glplans.name#</option></cfoutput></cfloop>
+          </select>
+        </li>
 <li class="clear"><label class="width-150">State</label></li>  
 <li style="padding-right:2px;">
 <select id="ue_rate_state" name="ue_rate_state" class="selectbox2" style="width:54px; padding:5px 2px; font-style:italic;">
 <option value="0">State</option>
 	<cfloop query="rc.states">
 	<cfoutput><option value="#state_id#" <cfif state_id eq ue_rate_state>selected</cfif>>#name#</option></cfoutput>
-	</cfloop></select></li>
+	</cfloop></select></li>  
   <li><button id="ueratebutton" name="ueratebutton" class="buttons">RATE</button>
   <!---
          <li class="clear"><label class="width-150">Rate SL Tax</label></li>     
@@ -671,7 +689,11 @@
          <li class="clear"><label class="width-150">Broker Fee</label></li>     
          <li><input type="text" name="ue_brokerfee" id="ue_brokerfee" class="width-107 dollarmaskdec ueprem" value="<cfoutput>#dollarFormat(ue_brokerfee)#</cfoutput>" /></li>
          <li class="clear"><label class="width-150">Agency/RPG Fee</label></li> 
-         <li><input type="text" name="ue_agencyfee" id="ue_agencyfee" class="width-107 dollarmaskdec ueprem" value="<cfoutput>#dollarFormat(ue_agencyfee)#</cfoutput>" /></li>              
+         <li><input type="text" name="ue_agencyfee" id="ue_agencyfee" class="width-107 dollarmaskdec ueprem" value="<cfoutput>#dollarFormat(ue_agencyfee)#</cfoutput>" /></li>    
+         <li class="clear"><input type="text" class="txtleft width-150" value="<cfoutput>#ue_custom_1_label#</cfoutput>" name="ue_custom_1_label" id="ue_custom_1_label"></li> 
+         <li><input type="text" name="ue_custom_1" id="ue_custom_1" class="width-107 dollarmaskdec ueprem" value="<cfoutput>#dollarFormat(ue_custom_1)#</cfoutput>" /></li>    
+         <li class="clear"><input type="text" class="txtleft width-150" value="<cfoutput>#ue_custom_2_label#</cfoutput>" name="ue_custom_2_label" id="ue_custom_2_label"></li> 
+         <li><input type="text" name="ue_custom_2" id="ue_custom_2" class="width-107 dollarmaskdec ueprem" value="<cfoutput>#dollarFormat(ue_custom_2)#</cfoutput>" /></li>                           
          <li class="clear"><label class="bold width-150">Total Premium</label></li>     
          <li><input type="text" name="ue_totalpremium" id="ue_totalpremium" class="width-107 dollarmaskdec readonly" value="<cfoutput>#dollarFormat(ue_totalpremium)#</cfoutput>" /></li>           
 </ul>   

@@ -64,6 +64,7 @@ $('.dollarmasknd').autoNumeric({aSign: '$',vMin: '-100000.00'});
 //input mask for integers
 $('.numbermask').autoNumeric({aSep: '',mDec: 0});
 $('.numberdecmask').autoNumeric({aSep: '',mDec: 3});
+$('.numberdecmask2').autoNumeric({aSep: '',mDec: 4});
 $('.percentmask').autoNumeric({aSign: '%',aSep:'',pSign:'s',vMin: '-100', vMax:500});
 $('.percentmask2').autoNumeric({aSign: '%',aSep:'',mDec: 0,pSign:'s',vMin:0, vMax:500});
 $('.percentdecmask').autoNumeric({aSign: '%',aSep:'',mDec: 4,pSign:'s',vMin:0, vMax:500});

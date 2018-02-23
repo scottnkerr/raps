@@ -165,7 +165,7 @@ function updateTotals() {
 <cfif isDefined('print')>
 <style>
 input[type='checkbox'] {
--moz-appearance: none;
+
 width:15px;
 height:15px;
 }

@@ -23,21 +23,23 @@ font-family:Arial !important;
 <cfparam name="rc.contacts.fax" default="">
 <cfparam name="rc.contacts.email" default="tabatha@fitnessinsurance.com">
 <cfparam name="rc.sigimage" default='<img src="http://#cgi.SERVER_NAME#/sigs/#session.auth.sig#" width="200">'>
+<cfparam name="rc.sigx" default='<img src="http://#cgi.SERVER_NAME#/images/sigx.gif" width="35" style="vertical-align:bottom">'>
+<cfparam name="rc.bracket" default='<img src="http://#cgi.SERVER_NAME#/images/bracket.gif" width="12" style="vertical-align:bottom">'>
 <cfsavecontent variable="addressblock">
 #rc.client.mailing_address#<br />
 <cfif trim(rc.client.mailing_address2) neq ''>
 #rc.client.mailing_address2#<br />
 </cfif>
-#rc.client.mailing_city#, #rc.client.statename#, #rc.client.mailing_zip#
+#trim(rc.client.mailing_city)#, #rc.client.statename# #rc.client.mailing_zip#
 </cfsavecontent>
 <cfsavecontent variable="addressline">
 #rc.client.mailing_address#<cfif trim(rc.client.mailing_address2) neq ''>, #rc.client.mailing_address2#</cfif>
 </cfsavecontent>
 <cfsavecontent variable="citystatezip">
-#rc.client.mailing_city#, #rc.client.statename#, #rc.client.mailing_zip#
+#rc.client.mailing_city#, #rc.client.statename# #rc.client.mailing_zip#
 </cfsavecontent>
 <cfset longdate = dateFormat(rc.date,'dddd, mmmm d, yyyy')>
 <cfset content = REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(REPLACENOCASE(rc.proposaldocs.proposal_doc_content,'[CURRENT_DATE]',longdate,'ALL'),'[ENTITY_NAME]','<b>#rc.client.entity_name#</b>','ALL'),'[TERRORISM_PREMIUM_OLD]',rc.terrorism_premium,'ALL'),'[DBA]',rc.client.dba,'ALL'),'[ADDRESS_BLOCK]',addressblock,'ALL'), '[CONTACT_NAME]',rc.contacts.name,'ALL'),'[CONTACT_PHONE]',rc.contacts.phone,'ALL'),'[CONTACT_FAX]',rc.contacts.fax,'ALL'),'[CONTACT_EMAIL]', rc.contacts.email, 'ALL'),'[CURRENT_EFFECTIVE_DATE]',dateFormat(rc.client.current_effective_date,'mm/dd/yyyy'),'ALL'),'[USER_SIG]',rc.sigimage,'ALL'),'[USER_NAME]',session.auth.fullname,'ALL'),'[ADDRESS_LINE]',addressline,'ALL'),'[CITY_STATE_ZIP]',citystatezip,'ALL'),'[AMS]',rc.client.ams,'ALL'),'[FEIN]',rc.client.fein,'ALL')>
-
-
+<cfset content = replacenocase(content, '[SIG_X]', rc.sigx, 'ALL')>
+<cfset content = replacenocase(content, '[BRACKET]', rc.bracket, 'ALL')>
 </cfoutput>

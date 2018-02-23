@@ -2,7 +2,7 @@
 <style>
 body, p {font-size:14px !important;
 line-height:20px !important;}
-h2 {margin-top:15px; text-align:center; font-size:24px;}
+h2 {margin-top:5px; text-align:center; font-size:24px;}
 .tbl {background-color:#000;}
 .tbl td,th,caption{background-color:#fff;}
 td, th {font-size:14px !important;}
@@ -14,7 +14,7 @@ input {border:none;}
         <cfset rc.proposaldocs.proposal_doc_content = rc.thiscontent>
 <cfsavecontent variable="rc.proposaldocs.proposal_doc_content">
 
-<table width="100%" border="0" cellspacing="0" cellpadding="18">
+<table width="100%" border="0" cellspacing="0" cellpadding="17">
   <tr>
     <td style="font-size:16px; font-weight:bold; width:170px">Customer Name:</td>
     <td><div style="font-size:16px; border-bottom:1px solid black; padding-bottom:1px;">#client.entity_name#</div></td>
@@ -75,15 +75,14 @@ I/(We) hereby authorize BankDirect / Brown & Brown, LLC. To initiate debit entri
 </table>
 </div>
 <h2 style="margin-top:30px"><span style="background-color:##FF0;">PLEASE ATTACH A VOIDED CHECK FOR THIS ACCOUNT</span></h2>
-<p>
+<p style="margin-bottom:20px;">
 This authorization is to remain in full force and effect until BankDirect / Brown & Brown, LLC. and DEPOSITORY have received written information from the above customer(s) of its termination, in such time and in such manner as to afford BankDirect / Brown & Brown, LLC. and DEPOSITORY a reasonable opportunity to act upon it.  
 </p>
-<br /><br />
 <p style="padding-bottom:15px;">
 Authorized &amp; Agreed to by:
 </p>
-______________________________________________________________________________________________________________________<br />
-By:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="http://#cgi.SERVER_NAME#/images/sigx.gif" width="35" style="vertical-align:bottom">________________________________________________________________________________________________________________<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Date:
 </div>

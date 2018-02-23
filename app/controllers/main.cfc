@@ -90,6 +90,8 @@
         <cfparam name="rc.client_id" default="0">
         <cfparam name="rc.onlyquote" default="0">
         <cfparam name="rc.preview" default="0">
+		<cfparam name="rc.header_image_override" default="">
+		<cfparam name="rc.gray_footer" default="0">
 
 				<cfset prefixLen = 3>
         <cfset pageLen = len(rc.pagenumber)>
@@ -164,12 +166,22 @@
         <cfelse>
         <cfset pagenum = 1>
         </cfif>        
+		<cfif trim(rc.header_image_override) eq ''>
+			<cfset margintop = "1">		
+		<cfelse>
+			<cfset margintop = "1.25">
+		</cfif>				
+		<cfif trim(rc.header_image_override) eq ''>
+			<cfset marginbottom = ".75">		
+		<cfelse>
+			<cfset marginbottom = "1">
+		</cfif>	 			
         <cfif trim(rc.thisfile) eq '' AND rc.thisinclude neq 'prop_include_quote.cfm'>
 					<cfif rc.thisinclude eq 'prop_include_summary.cfm'>
           	<cfset totals = getPropSummaryTotals(rc.client_id,rc.onlyquote)>
           </cfif>
-        
-        <cfdocument format="pdf" name="proposalpdf" margintop="1" marginbottom=".75" backgroundvisible="yes" localurl="true" filename="#fullpath#\#prefix#-FitnessProposal.pdf" overwrite="yes" fontembed="no">
+       
+        <cfdocument format="pdf" name="proposalpdf" margintop="#margintop#" marginbottom="#marginbottom#" backgroundvisible="yes" localurl="true" filename="#fullpath#\#prefix#-FitnessProposal.pdf" overwrite="yes" fontembed="no">
         <cfoutput>
         <html>
         <body style="position: relative; font-family:Arial, Helvetica, sans-serif;">
@@ -185,7 +197,7 @@
        
        <cfset terrorism_premium = mainGW.getTerrorismPrem(rc.client_id,rc.onlyquote)>
         
-        <cfset excess_terrorism_premium = mainGW.getExTerrorismPrem(client.ue_rate_state,client.ue_premium)>
+        <cfset excess_terrorism_premium = mainGW.getExTerrorismPrem(client.ue_rate_state,client.ue_premium,client.liability_plan_id)>
        
         <cfset pagebreak = '<p style="page-break-after: always !important; padding:0, margin:0; line-height:0; height:0; overflow:hidden;">&nbsp;</p>'>
         #replacenocase(replacenocase(replacenocase(replacenocase(content,"[PAGE_BREAK]", pagebreak, "ALL"),'[RANDY_SIG]','<img src="/images/testsig2.gif" height="75" width="200">','ALL'),'[terrorism_premium]', dollarFormat(terrorism_premium),'ALL'),'[excess_terrorism_premium]', dollarFormat(excess_terrorism_premium),'ALL')# 
@@ -196,10 +208,19 @@
         </html>
         </cfoutput>
         <cfif rc.includefooter is 1> 
-        <cfdocumentitem type="footer" evalAtPrint="true">
+		
+        <cfdocumentitem type="footer" evalAtPrint="true" grayfooter="#rc.gray_footer#">
         <cfset thispagenum = pagenum + cfdocument.currentpagenumber - 1>
-       <p style="text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px;">2170 S. Parker Rd, Suite 251<span style="color:white">W</span>|<span style="color:white">W</span>Aurora, CO  80231<span style="color:white">W</span>|<span style="color:white">W</span>800.881.7130<span style="color:white">W</span>|<span style="color:white">W</span>Fax 720.279.8321<span style="color:white">W</span>|<span style="color:white">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;">Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</span><br />Page #thispagenum#<span style="color:white">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></p>
+			<cfif val(attributes.grayfooter) eq 1>
+			<cfset xtrastyles = "background-color: ##7F7F7F; padding: 20px 10px 10px; color:##ffffff">
+			<cfset transtextcolor = '##7F7F7F' >
+			<cfelse>
+			<cfset xtrastyles = "">	
+			<cfset transtextcolor = '##FFFFFF' >
+			</cfif>
+       <p style="text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; #xtrastyles#">2170 S. Parker Rd, Suite 251<span style="color:#transtextcolor#">W</span>|<span style="color:#transtextcolor#">W</span>Aurora, CO  80231<span style="color:#transtextcolor#">W</span>|<span style="color:#transtextcolor#">W</span>800.881.7130<span style="color:#transtextcolor#">W</span>|<span style="color:#transtextcolor#">W</span>Fax 720.279.8321<span style="color:#transtextcolor#">W</span>|<span style="color:#transtextcolor#">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;">Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</span><br />Page #thispagenum#<span style="color:#transtextcolor#">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></p>
         </cfdocumentitem>  
+				
         </cfif>      
         </cfdocument> 
         <cfelseif rc.thisinclude is 'prop_include_quote.cfm'>
@@ -287,7 +308,7 @@
         <cffile action = "copy" destination = "#fullpath#\#prefix#-FitnessProposal.pdf" source = "#path#\proposals\uploads\#rc.thisfile#">
         <cfif rc.includefooter is 1> 
         <cfsavecontent variable="footerstuff">
-       <span style="font-family:Arial, Helvetica, sans-serif; font-size:xx-small; line-height:1.5em;">2170 S. Parker Rd, Suite 251<span style="color:white">W</span>|<span style="color:white">W</span>Aurora, CO  80231<span style="color:white">W</span>|<span style="color:white">W</span>800.881.7130<span style="color:white">W</span>|<span style="color:white">W</span>Fax 720.279.8321<span style="color:white">W</span>|<span style="color:white">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;"><sup>Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</sup></span><br />Page #pagenum#<span style="color:white">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></span>
+		<table style="background-color:##7F7F7F"><tr><td style="background-color:blue"><span style="font-family:Arial, Helvetica, sans-serif; font-size:xx-small; line-height:1.5em;">2170 S. Parker Rd, Suite 251<span style="color:white">W</span>|<span style="color:white">W</span>Aurora, CO  80231<span style="color:white">W</span>|<span style="color:white">W</span>800.881.7130<span style="color:white">W</span>|<span style="color:white">W</span>Fax 720.279.8321<span style="color:white">W</span>|<span style="color:white">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;"><sup>Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</sup></span><br />Page #pagenum#<span style="color:white">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></span></td></tr></table>
         </cfsavecontent>
         <cfpdf action="addFooter" source="#fullpath#\#prefix#-FitnessProposal.pdf" text="#footerstuff#" showonprint="yes" opacity="10" bottomMargin=".75" />
         </cfif>
@@ -295,12 +316,12 @@
         
         </cfif>
        <cfif rc.includeheader is 1>
-       <cfif docid neq 6>
-       <cfset headerimage = "#path#\images\Fitness-Insurance-logo-long.gif">
+       <cfif trim(rc.header_image_override) neq ''>
+       <cfset headerimage = "#path#\images\#rc.header_image_override#">
        <cfelse>
-       <cfset headerimage = "#path#\images\ACH-Header.gif">
+       <cfset headerimage = "#path#\images\Fitness-Insurance-logo-long.gif">
        </cfif>
-       <cfpdf action="addHeader" source="#fullpath#\#prefix#-FitnessProposal.pdf" image="#headerimage#"  topMargin="1" leftMargin="0" rightMargin="0" showonprint="yes" opacity="10" />
+       <cfpdf action="addHeader" source="#fullpath#\#prefix#-FitnessProposal.pdf" image="#headerimage#"  topMargin="#margintop#" leftMargin="0" rightMargin="0" showonprint="yes" opacity="10" />
        </cfif>
        <cfif rc.includefooter is 1>  
 
@@ -457,7 +478,7 @@
         </cfoutput>
         <cfif rc.includefooter is 1> 
         <cfdocumentitem type="footer" evalAtPrint="true">
-       <p style="text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px;">2170 S. Parker Rd, Suite 251<span style="color:white">W</span>|<span style="color:white">W</span>Aurora, CO  80231<span style="color:white">W</span>|<span style="color:white">W</span>800.881.7130<span style="color:white">W</span>|<span style="color:white">W</span>Fax 720.279.8321<span style="color:white">W</span>|<span style="color:white">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;">Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</span><br />Page 1<span style="color:white">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></p>
+       <p style="text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:18px; background-color:##7F7F7F">2170 S. Parker Rd, Suite 251<span style="color:white">W</span>|<span style="color:white">W</span>Aurora, CO  80231<span style="color:white">W</span>|<span style="color:white">W</span>800.881.7130<span style="color:white">W</span>|<span style="color:white">W</span>Fax 720.279.8321<span style="color:white">W</span>|<span style="color:white">W</span>www.fitnessinsurance.com<cfoutput><br /><span style="font-size:xx-small; font-style:italic;">Doing Business As Fitness Insurance Agency in MI, TX, NC, NY, and CA. CA License Number 0G00756</span><br />Page 1<span style="color:white">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</span> #dateFormat(now(),"mm/dd/yyyy")#</cfoutput></p>
         </cfdocumentitem>  
         </cfif>      
         </cfdocument> 
@@ -573,6 +594,7 @@
 			<cfset rc.client = mainGW.getClient(client_id=rc.client_id)>
 			<cfset rc.contacts = mainGW.getClientContacts(client_id=rc.client_id)>
       <cfset rc.locations = mainGW.getLocations(rc.client_id)>
+      <cfset rc.glplans = mainGW.getClientGLPlans(0,rc.client_id,0)>
       <!---<cfdump var="#rc.locations#">--->
             <cfset rc.xrefs = mainGW.getXrefs(rc.client_id,rc.client.x_reference)>
 			<cfset rc.lstatus = mainGW.getLocationStatus()>
@@ -1338,7 +1360,7 @@
 										 rc.custom_tax_4_type,
 										 rc.custom_tax_5_label,
 										 ReReplace(rc.custom_tax_5, "[^\d.]", "","ALL"),
-										 rc.custom_tax_1_type,
+										 rc.custom_tax_5_type,
 										 <!---rc.terrorism_fee,--->
 										 rc.calculation,
 										 rc.notes,

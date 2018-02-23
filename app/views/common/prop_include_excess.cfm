@@ -113,6 +113,18 @@ td, th {font-size:12px; text-align:left;}
 <td style="text-align:right;">#dollarFormat(client.ue_agencyfee)#</td>
 </tr>
 </cfif>
+<cfif val(client.ue_custom_1) gt 0>
+<tr>
+<td>#client.ue_custom_1_label#</td>
+<td style="text-align:right;">#dollarFormat(client.ue_custom_1)#</td>
+</tr>
+</cfif>
+<cfif val(client.ue_custom_2) gt 0>
+<tr>
+<td>#client.ue_custom_2_label#</td>
+<td style="text-align:right;">#dollarFormat(client.ue_custom_2)#</td>
+</tr>
+</cfif>
 <tr>
 <td><b>Total</b></td>
 <td style="text-align:right;"><b>#dollarFormat(client.ue_totalpremium)#</b></td>

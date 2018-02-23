@@ -824,7 +824,7 @@ $(".deleteloc").live("click", function(){
 });	
 $('#ueratebutton').click(function(e) {
 		e.preventDefault();
-		getUEState();
+		getLiabilityPlan();
 });
 $('#ue_terrorism_rejected').click(function() {
 	var tfee = $('#ue_terrorism_fee').autoNumericGet();
@@ -1432,6 +1432,35 @@ $("#addloc"+othertab).before('<li class="clear locs"><label class="txtleft locs"
 
 
 }
+function getLiabilityPlan() {
+
+	var id = $('#liability_plan_id').val();
+	$.ajax({
+    url: "/index.cfm?event=main.getGLPlans", 
+	type: "get",
+	cache: false,
+	dataType: "json",
+	data: {
+	  liability_plan_id: id
+  }
+  , success: function (response){
+
+		  $.each(response.data, function(k, v) {
+
+				ue_terrorismrate = v.terrorism_fee / 100;
+				//next, get state taxes	
+				getUEState();
+
+		  }); //end each
+
+	} //end success
+  // this runs if an error
+  , error: function (xhr, textStatus, errorThrown){
+    // show error
+    alert(errorThrown);
+  }
+	});//end ajax	
+} //end getLiabilityPlan
 function getUEState() {
 	var state_id = $('#ue_rate_state').val();
 	 //get state tax info
@@ -1451,7 +1480,7 @@ function getUEState() {
 		var rpgfee = $('#ue_agencyfee').autoNumericGet();
 		//console.log(ue_premium);
 		//terrorism
-		var ue_terrorismrate = v.terrorism_fee / 100;
+
 		var ue_terrorism = ue_premium * ue_terrorismrate;
 			var ischecked = $('#ue_terrorism_rejected').attr('checked');
 			if (ischecked != 'checked') {

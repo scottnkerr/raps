@@ -493,6 +493,9 @@ width:314px
 .newli {
 	
 }
+.customtaxlabel {
+	overflow:hidden;
+}
 #noteslider {
 position: fixed;
 right:-240px;

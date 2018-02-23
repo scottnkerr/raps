@@ -187,7 +187,7 @@ $.ajax({
  <cfloop from="1" to="#customtaxfields#" index="i">
  <li class="clear"><label>#i#</label></li>
  <li><input type="text" name="custom_tax_#i#_label" id="custom_tax_#i#_label" class="width-80" /></li>
- <li><input type="text" name="custom_tax_#i#" id="custom_tax_#i#" class="width-80 numberdecmask" /></li>
+ <li><input type="text" name="custom_tax_#i#" id="custom_tax_#i#" class="width-80 numberdecmask2" /></li>
  <li><select name="custom_tax_#i#_type" id="custom_tax_#i#_type">
  		<option value="%">%</option>
     <option value="$">$</option>

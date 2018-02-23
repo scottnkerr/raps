@@ -82,7 +82,7 @@ td, th {
       <cfset totalglpremium = val(totalglpremium) + val(glprem)>
       <cfset totalglbroker = val(totalglbroker) + val(rating.brokerfee)>
       <cfset totalglinspection = val(totalglinspection) + val(rating.inspectionfee)>
-      <cfset totalglsurplus = val(totalglsurplus) + val(rating.surplustax)>
+      <cfset totalglsurplus = val(totalglsurplus) + val(rating.surplustax) + val(rating.custom_tax_1) + val(rating.custom_tax_2) + val(rating.custom_tax_3) + val(rating.custom_tax_4) + val(rating.custom_tax_5)>
       <cfset totalglstamping = val(totalglstamping) + val(rating.stampingfee)>
       <cfset totalglfiling = val(totalglfiling) + val(rating.filingfee)>
       <cfset totalglstate = val(totalglstate) + val(rating.statecharge)>
@@ -92,7 +92,7 @@ td, th {
       <cfset statetotalglpremium = val(statetotalglpremium) + val(glprem)>
       <cfset statetotalglbroker = val(statetotalglbroker) + val(rating.brokerfee)>
       <cfset statetotalglinspection = val(statetotalglinspection) + val(rating.inspectionfee)>
-      <cfset statetotalglsurplus = val(statetotalglsurplus) + val(rating.surplustax)>
+      <cfset statetotalglsurplus = val(statetotalglsurplus) + val(rating.surplustax) + val(rating.custom_tax_1) + val(rating.custom_tax_2) + val(rating.custom_tax_3) + val(rating.custom_tax_4) + val(rating.custom_tax_5)>
       <cfset statetotalglstamping = val(statetotalglstamping) + val(rating.stampingfee)>
       <cfset statetotalglfiling = val(statetotalglfiling) + val(rating.filingfee)>
       <cfset statetotalglstate = val(statetotalglstate) + val(rating.statecharge)>

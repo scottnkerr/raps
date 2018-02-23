@@ -333,8 +333,11 @@ $.ajax({
 [CURRENT_EFFECTIVE_DATE]<BR />
 [TERRORISM_PREMIUM]<BR />
 [USER_SIG]<BR />
+	
 [USER_NAME]<BR />
 [PAGE_BREAK]<BR />
+[SIG_X]<BR />
+[BRACKET]<BR />
 </p>
 <p>Short codes are not case sensitive</p>
 </div>

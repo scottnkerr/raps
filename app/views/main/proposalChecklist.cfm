@@ -210,6 +210,8 @@ function createProposal() {
 		counter = counter + 1;						  
 		var thisid = $(this).attr('id');
 		var thisname = $(this).find('.propdocname').val();
+		var thisheaderoverride = $(this).find('.headeroverride').val();
+		var grayfooter = $(this).find('.grayfooter').val();
 		var thiscontent = formatContent(this);
 		var thisinclude = $(this).find('.propdocinclude').val();
 		var thisfile = $(this).find('.propdocfile').val();
@@ -226,8 +228,7 @@ function createProposal() {
 		}
 		else {
 		includefooter = 0;	
-		}		
-		
+		}				
 		if (counter < numItems) {
 			lastone = false;
 		}
@@ -265,7 +266,9 @@ function createProposal() {
 					glpropchecked: glpropchecked,
 					otherchecked: otherchecked,
 					otherchecked2: otherchecked2,
-					otherchecked3: otherchecked3
+					otherchecked3: otherchecked3,
+				    header_image_override: thisheaderoverride,
+				    gray_footer: grayfooter
 			},
             dataType: 'json',
             success: function(data){
@@ -389,6 +392,8 @@ function formatContent(elem) {
 <cfoutput query="rc.proposaldocs">
 <li class="clear docli<cfif rc.proposaldocs.defaultcheck neq 1> ignoresort</cfif><cfif rc.proposaldocs.includes_list eq 1> haslist</cfif><cfif rc.proposaldocs.quote_swap eq 1> quoteswap</cfif>" id="section_id_#rc.proposaldocs.proposal_doc_id#"><input type="checkbox" id="doc_#rc.proposaldocs.proposal_doc_id#" name="doc_#rc.proposaldocs.proposal_doc_id#" class="docchecks"<cfif rc.proposaldocs.defaultcheck is 1> checked="checked"</cfif> /><div class="docname">#rc.proposaldocs.proposal_doc_name#</div><input type="checkbox" checked="checked" name="includeheader" class="plaincheck hidecheck includeheadercheck" /><input type="checkbox" name="includefooter"<cfif rc.proposaldocs.proposal_doc_id neq 6> checked="checked"</cfif> class="plaincheck hidecheck includefootercheck">
 <input type="hidden" name="proposal_doc_name" value="#rc.proposaldocs.proposal_doc_name#" class="propdocname" />
+<input type="hidden" name="header_image_override" value="#rc.proposaldocs.header_image_override#" class="headeroverride" />	  
+<input type="hidden" name="gray_footer" value="#val(rc.proposaldocs.gray_footer)#" class="grayfooter" />	
 <img src="/images/movebutton.png" class="movebutton" title="Click and drag to change document order" />
 <cfif rc.proposaldocs.editable is 1 OR rc.proposaldocs.includes_list eq 1><img src="/images/editbuttonlarge.png" class="doceditbutton" title="Click to edit" /></cfif>
 <!---replace shortcodes with real data--->

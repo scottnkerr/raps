@@ -1027,9 +1027,11 @@ and client_id = #arguments.client_id#
 	<cffunction name="getExTerrorismPrem" output="true" returntype="numeric">
 			<cfargument name="ue_rate_state" required="true" default="0">
       <cfargument name="ue_premium" required="true" default="0">
+      <cfargument name="liability_plan_id" required="true" default="0">
       
 			<cfset stateinfo = getStates(val(arguments.ue_rate_state))>
-      <cfset terrorism = round(val(arguments.ue_premium) * (val(stateinfo.terrorism_fee) / 100))>
+      <cfset planinfo = getGLPlans(arguments.liability_plan_id)>
+      <cfset terrorism = round(val(arguments.ue_premium) * (val(planinfo.terrorism_fee) / 100))>
       <cfset tax = terrorism * (val(stateinfo.tax_rate) / 100)>
       <cfset stamping = terrorism * (val(stateinfo.stamp_tax) / 100)>
       <cfset totalterrorism = terrorism + tax + stamping>
@@ -1038,10 +1040,12 @@ and client_id = #arguments.client_id#
 	<cffunction name="getLocationRating" output="false">
 		<cfargument name="location_id" required="true">
 		<cfquery name="getloc">
-        SELECT TOP 1 a.*, b.*, c.proposal_hide as hide_gl, c.*, d.proposal_hide as hide_prop, d.*, e.name as glissuing, f.name as propissuing, g.*, g.prop_terrorism as propt, h.cyber_liability_amount, i.employee_dishonesty_amount
+        SELECT TOP 1 a.*, b.*, c.proposal_hide as hide_gl, c.*, d.proposal_hide as hide_prop, d.*, e.name as glissuing, f.name as propissuing, g.*, g.prop_terrorism as propt, h.cyber_liability_amount, i.employee_dishonesty_amount, ap.hvac
         FROM rating a
         INNER JOIN rating_liability b
         ON a.ratingid = b.ratingid
+		INNER JOIN applications ap
+		ON a.location_id = ap.location_id
         LEFT JOIN liability_plans c
         ON a.liability_plan_id = c.liability_plan_id
         LEFT JOIN property_plans d

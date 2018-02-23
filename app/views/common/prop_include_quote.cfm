@@ -169,10 +169,9 @@ td, th {font-size:12px; text-align:left; line-height:12px;}
     <td>Additional EDP Equipment</td>
     <td style="text-align:right;"><cfif val(rating.prop_edplimit) neq 0>$#numberFormat(rating.prop_edplimit,',')#<cfelse>No Coverage</cfif></td>
   </tr> 
-
   <tr>
     <td>HVAC</td>
-    <td style="text-align:right;"><cfif val(rating.prop_hvaclimit) neq 0>$#numberFormat(rating.prop_hvaclimit,',')#<cfelse>No Coverage</cfif></td>
+    <td style="text-align:right;"><cfif val(rating.hvac) eq 1 and val(rating.prop_hvaclimit) neq 0>$#numberFormat(rating.prop_hvaclimit,',')#<cfelseif val(rating.hvac) eq 1 and val(rating.prop_hvaclimit) eq 0>Included<cfelse>No Coverage</cfif></td>
   </tr> 
   <tr>
     <td>Sign Coverage over $25k</td>
@@ -367,7 +366,7 @@ td, th {font-size:12px; text-align:left; line-height:12px;}
 <p style="font-weight:bold; padding-top:10px;">TOTAL PREMIUM THIS LOCATION: $#decimalFormat(totalpremium)#</p>
 <p style="font-size:10px;"><strong>Special Conditions and Comments</strong></p>
 <cfif rating.hide_prop neq 1>
-<p style="font-size:10px;">If Building is covered, coverage is Special Form, Replacement Cost, No Coinsurance unless specified above. If Personal Property is covered, coverage is Special Form, Replacement Cost, No Coinsurance unless specified above. If Business Income is covered, coverage is Special Form, 1 Day Deductible, 1/3 Monthly Limitation, 90 Day Extended Period of Indemnity unless specified above.</p></cfif>
+<p style="font-size:10px;">If Building is covered, coverage is Special Form, Replacement Cost, No Coinsurance unless specified above. If Personal Property is covered, coverage is Special Form, Replacement Cost, No Coinsurance unless specified above. If Business Income is covered, coverage is Special Form, 3 Day Deductible, 1/3 Monthly Limitation, 90 Day Extended Period of Indemnity unless specified above.</p></cfif>
 <cfif val(rating.prop_exclwind) eq 1><p style="font-size:10px;"><strong>WIND/HAIL IS EXCLUDED ENTIRELY.</strong></p></cfif>
 <p style="font-size:10px; margin:0; padding:0;">#rating.liability_propnotes#<br>#rating.property_propnotes#</p>
 
