@@ -993,6 +993,7 @@ and client_id = #arguments.client_id#
       <cfset rating = getLocationRating(locations.location_id)>
      
       <cfset thisterrorism = round(val(rating.terrorism_fee))>
+     
       <cfset thistotal = calculateTerrorism(thisterrorism,locations.state_id)>
  
       <cfset totalterrorism = thistotal + totalterrorism>
@@ -1017,11 +1018,12 @@ and client_id = #arguments.client_id#
   <cffunction name="calculateTerrorism" output="false" returntype="numeric">
   <cfargument name="terrorism_amount" type="numeric" required="yes">
   <cfargument name="state_id" type="numeric" required="yes">
+  <!--- removing tax stuff per Amber 5/18/18
 		<cfset thisstate = getstates(arguments.state_id)>
 		<cfset thistaxrate = 1 + thisstate.tax_rate / 100>
-
 		<cfset thisstamping = terrorism_amount * (val(thisstate.stamp_tax) / 100)>
-		<cfset thistotal = terrorism_amount * thistaxrate + thisstamping>  
+		<cfset thistotal = terrorism_amount * thistaxrate + thisstamping>  --->
+        <cfset thistotal = terrorism_amount>
   <cfreturn thistotal />
   </cffunction>
 	<cffunction name="getExTerrorismPrem" output="true" returntype="numeric">
@@ -1029,12 +1031,14 @@ and client_id = #arguments.client_id#
       <cfargument name="ue_premium" required="true" default="0">
       <cfargument name="liability_plan_id" required="true" default="0">
       
-			<cfset stateinfo = getStates(val(arguments.ue_rate_state))>
+	    <cfset stateinfo = getStates(val(arguments.ue_rate_state))>
       <cfset planinfo = getGLPlans(arguments.liability_plan_id)>
       <cfset terrorism = round(val(arguments.ue_premium) * (val(planinfo.terrorism_fee) / 100))>
+      <!---removing tax stuff per Amber 5/18/18
       <cfset tax = terrorism * (val(stateinfo.tax_rate) / 100)>
       <cfset stamping = terrorism * (val(stateinfo.stamp_tax) / 100)>
-      <cfset totalterrorism = terrorism + tax + stamping>
+      <cfset totalterrorism = terrorism + tax + stamping>--->
+      <cfset totalterrorism = terrorism>
 		<cfreturn totalterrorism />
 	</cffunction>    
 	<cffunction name="getLocationRating" output="false">

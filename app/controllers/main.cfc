@@ -3522,7 +3522,8 @@
 </cfloop>
 <tr><td>Grand Totals</td><td>#grandtotalloc#</td><td>#grandtotalgl#</td></tr>
 </table>
-<cfset fw.setView('main.test') />	 
+<cfset fw.setView('main.test') />	
+ 
   </cffunction>   
 	<cffunction name="wcreport" access="public" output="yes">
 		<cfargument name="rc" type="any">  
@@ -3557,6 +3558,8 @@
   </cffunction>    
 <cffunction name="test" access="public" output="yes">
 <cfset terrorism_premium = mainGW.getTerrorismPrem(50,0)>
+<cfset excess_terrorism_premium = mainGW.getExTerrorismPrem(5,50,2)>
 <cfdump var="#terrorism_premium#">
+<cfdump var="#excess_terrorism_premium#">
 </cffunction>
 </cfcomponent>
