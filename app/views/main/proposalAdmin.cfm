@@ -2,6 +2,7 @@
 $(document).ready(function() {
 $('#proposal_doc_content').wijeditor({
 							mode:'simple',
+							//mode: 'bbcode',
 							showFooter:false,
 							simpleModeCommands: ["FontName", "FontSize","Bold", "Italic", "UnderLine", "SubScript", "SuperScript", "Link", "StrikeThrough", "InsertDate", "InsertImage", "NumberedList", "BulletedList", "InsertCode","CheckBox", "JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyFull", "Outdent", "Indent", "Undo", "Redo" ]});
 //$("#proposal_doc_content").wijeditor("setText", "");

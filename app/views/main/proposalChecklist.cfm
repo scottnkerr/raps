@@ -403,8 +403,13 @@ function formatContent(elem) {
 <!--- First, replace brackets with < and > so it doesn't cause problems with regex --->
 <cfset content = replacenocase(content, "[list]","<list>","ALL")>
 <cfset content = replacenocase(content, "[/list]","</list>","ALL")>
+<!--- strip out divs--->
+<cfset content = replacenocase(content, "<div>","","ALL")>
+<cfset content = replacenocase(content, "</div>","","ALL")>
+
 <!--- find content between <list> and </list>--->
 <cfset list = Rematch('<list[^>]*>(?:[^<]+|<(?!/list>))+',content)>
+
 <!--- if a match was found, strip out list tag and get rest of content--->
 <cfif arrayIsDefined(list,1)>
 <cfset liststring = list[1]>
